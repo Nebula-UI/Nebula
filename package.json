@@ -1,0 +1,52 @@
+{
+    "name": "Nucleus-B",
+    "version": "0.0.1",
+    "edition": "Beta",
+    "author": "Ashwin Hegde",
+    "description": "This open source project is an application skeleton for a typical Backbone web apppplication. You can use it to quickly bootstrap your Backbone web application projects.",
+    "contributors": [{
+        "name": "Ashwin Hegde",
+        "email": "github.com/hegdeashwin"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "//github.com/hegdeashwin/Nucleus-B"
+    },
+    "issues": {
+        "url": "//github.com/hegdeashwin/Nucleus-B/issues?state=open"
+    },
+    "milestones": {
+        "url": "//github.com/hegdeashwin/Nucleus-B/issues/milestones"
+    },
+    "releases": {
+        "url": "//github.com/hegdeashwin/Nucleus-B/releases"
+    },
+    "wiki": {
+        "url": "//github.com/hegdeashwin/Nucleus-B/wiki"
+    },
+    "dependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-contrib-csslint": "~0.1.2",
+        "grunt-contrib-less": "~0.7.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt-strip": "~0.2.1",
+        "grunt-shell": "~0.6.1",
+        "grunt-recess": "~0.3.3",
+        "grunt-qunit-istanbul": "~0.3.0"
+    },
+    "engines": {
+        "node": ">=0.10"
+    },
+    "scripts": {
+        "start": "node server"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "//raw.github.com/hegdeashwin/Nucleus-B/master/LICENSE"
+    }],
+    "keywords": [
+        "backbone"
+    ]
+}
