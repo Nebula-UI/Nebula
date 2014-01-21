@@ -33,6 +33,7 @@
         "grunt-contrib-jshint": "~0.8.0",
         "grunt-jscs-checker": "~0.3.2",
         "grunt-contrib-csslint": "~0.2.0",
+        "grunt-htmlhint": "~0.4.0",
         "grunt-contrib-less": "~0.9.0",
         "grunt-contrib-watch": "~0.5.3",
         "grunt-strip": "~0.2.1",

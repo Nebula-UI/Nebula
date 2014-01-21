@@ -121,6 +121,46 @@ module.exports = function(grunt) {
                 }
             }
         },
+        htmlhint: {
+            Root_HTML_Files: {
+                options: {
+                    "tag-pair": true,
+                    "tagname-lowercase": true,
+                    "attr-lowercase": true,
+                    "attr-value-double-quotes": true,
+                    "attr-value-not-empty": true,
+                    "doctype-first": true,
+                    "tag-self-close": true,
+                    "spec-char-escape": true,
+                    "id-unique": true,
+                    "head-script-disabled": true,
+                    "img-alt-require": true,
+                    "doctype-html5": true,
+                    "id-class-value": true
+                },
+                src: [
+                    "src/*.html"
+                ]
+            },
+            Templates: {
+                options: {
+                    "tagname-lowercase": true,
+                    "attr-lowercase": true,
+                    "attr-value-double-quotes": true,
+                    "attr-value-not-empty": true,
+                    "tag-self-close": false,
+                    "spec-char-escape": true,
+                    "id-unique": true,
+                    "head-script-disabled": true,
+                    "img-alt-require": true,
+                    "id-class-value": true,
+                    "style-disabled": true
+                },
+                src: [
+                    "src/templates/**/*.html"
+                ]
+            }
+        },
         recess: {
             options: {
                 compile: true
@@ -143,16 +183,7 @@ module.exports = function(grunt) {
             }
         },
         qunit: {
-            options: {
-                '--web-security': 'no',
-                coverage: {
-                    src: ['src/core/**/*.js'],
-                    instrumentedFiles: 'temp/',
-                    htmlReport: 'report/coverage',
-                    coberturaReport: 'report/'
-                }
-            },
-            all: ['../tests/index.html']
+            files: ['tests/**/*.html']
         },
         strip: {
             main: {
@@ -171,14 +202,15 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-jscs-checker");
     grunt.loadNpmTasks("grunt-contrib-csslint");
+    grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks("grunt-recess");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
     
     // Load Default Task.
-    grunt.registerTask("default", ["clean", "jshint", "jscs", "recess", "csslint"]);
+    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
 
     // Load Build Task;
-    grunt.registerTask("build", ["clean", "jshint", "jscs", "recess", "csslint", "shell", "qunit", "strip"]);
+    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "qunit", "strip"]);
 };
