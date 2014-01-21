@@ -183,7 +183,16 @@ module.exports = function(grunt) {
             }
         },
         qunit: {
-            files: ['tests/**/*.html']
+            options: {
+                '--web-security': 'no',
+                coverage: {
+                    src: ['src/core/**/*.js'],
+                    instrumentedFiles: 'temp/',
+                    htmlReport: 'report/coverage',
+                    coberturaReport: 'report/'
+                }
+            },
+            all: ['test/**/*.html']
         },
         strip: {
             main: {
@@ -207,7 +216,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
-    
+
     // Load Default Task.
     grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
 
