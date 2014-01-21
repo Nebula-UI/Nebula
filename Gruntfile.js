@@ -192,7 +192,7 @@ module.exports = function(grunt) {
                     coberturaReport: 'report/'
                 }
             },
-            all: ['test/**/*.html']
+            all: ['tests/**/*.html']
         },
         strip: {
             main: {
@@ -218,8 +218,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-strip");
 
     // Load Default Task.
-    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
+    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "qunit"]);
 
     // Load Build Task;
-    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "qunit", "strip"]);
+    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "qunit", "shell", "qunit", "strip"]);
 };
