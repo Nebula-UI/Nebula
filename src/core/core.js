@@ -1,9 +1,5 @@
-define(function(require) {
+define(function() {
     'use strict';
-
-    var $ = require('jquery'),
-        _ = require('underscore'),
-        Backbone = require('backbone');
 
     var create = function(context, name, View, options) {
         var view = null,

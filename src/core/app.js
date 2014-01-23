@@ -16,7 +16,7 @@ define(function(require) {
         xhrStatusHandler: function() {
             $.ajaxSetup({
                 statusCode: {
-                    403: function(response) {
+                    403: function() {
                         return false;
                     }
                 }
