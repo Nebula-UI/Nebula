@@ -1,5 +1,5 @@
 {
-    "name": "Nucleus-B",
+    "name": "Nebula",
     "version": "0.0.1",
     "edition": "Beta",
     "author": "Ashwin Hegde",
@@ -10,19 +10,19 @@
     }],
     "repository": {
         "type": "git",
-        "url": "//github.com/hegdeashwin/Nucleus-B"
+        "url": "//github.com/hegdeashwin/Nebula"
     },
     "issues": {
-        "url": "//github.com/hegdeashwin/Nucleus-B/issues?state=open"
+        "url": "//github.com/hegdeashwin/Nebula/issues?state=open"
     },
     "milestones": {
-        "url": "//github.com/hegdeashwin/Nucleus-B/issues/milestones"
+        "url": "//github.com/hegdeashwin/Nebula/issues/milestones"
     },
     "releases": {
-        "url": "//github.com/hegdeashwin/Nucleus-B/releases"
+        "url": "//github.com/hegdeashwin/Nebula/releases"
     },
     "wiki": {
-        "url": "//github.com/hegdeashwin/Nucleus-B/wiki"
+        "url": "//github.com/hegdeashwin/Nebula/wiki"
     },
     "dependencies": {
         "express": "~3.4.7"
@@ -49,7 +49,7 @@
     },
     "licenses": [{
         "type": "MIT",
-        "url": "//raw.github.com/hegdeashwin/Nucleus-B/master/LICENSE"
+        "url": "//raw.github.com/hegdeashwin/Nebula/master/LICENSE"
     }],
     "keywords": [
         "backbone"
