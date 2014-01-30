@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](https://travis-ci.org/hegdeashwin/Nebula)
+[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](https://travis-ci.org/hegdeashwin/Nebula)
