@@ -3,10 +3,7 @@ node_js:
   - "0.10.x"
   
 before_script:
-  - sudo npm install -g grunt-cli
   - sudo npm install
-
-script: grunt build --verbose --force
 
 deploy:
   provider: heroku
