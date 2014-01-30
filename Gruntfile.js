@@ -221,5 +221,5 @@ module.exports = function(grunt) {
     grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "qunit"]);
 
     // Load Build Task;
-    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "qunit", "shell", "qunit", "strip"]);
+    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "strip"]);
 };
