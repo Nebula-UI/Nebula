@@ -218,7 +218,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-strip");
 
     // Load Default Task.
-    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "qunit"]);
+    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
 
     // Load Build Task;
     grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "strip"]);
