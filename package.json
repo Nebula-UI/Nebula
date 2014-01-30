@@ -45,7 +45,7 @@
         "node": ">=0.10"
     },
     "scripts": {
-        "start": "node server"
+        "test": "grunt travis --verbose"
     },
     "licenses": [{
         "type": "MIT",
