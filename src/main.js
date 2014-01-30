@@ -5,7 +5,7 @@ requirejs.config({
     /***
      * The path where your JavaScripts files are located.
      */
-    baseUrl: './core/',
+    baseUrl: './apps/',
 
     /***
      * Path config is also part of Require and allows to define paths for vendors

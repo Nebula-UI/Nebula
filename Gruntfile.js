@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            all: ["src/core/**/*.js"],
+            all: ["src/apps/**/*.js"],
             options: {
                 ignores: ["src/main.js", "src/systems/libs/**/*.js"],
                 "strict": true,
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
             }
         },
         jscs: {
-            src: "src/core/**/*.js",
+            src: "src/apps/**/*.js",
             options: {
                 "requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
                 "requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch"],
@@ -186,7 +186,7 @@ module.exports = function(grunt) {
             options: {
                 '--web-security': 'no',
                 coverage: {
-                    src: ['src/core/**/*.js'],
+                    src: ['src/apps/**/*.js'],
                     instrumentedFiles: 'temp/',
                     htmlReport: 'report/coverage',
                     coberturaReport: 'report/'
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
         },
         strip: {
             main: {
-                src: "prod/src/core/**/*.js",
+                src: "prod/src/apps/**/*.js",
                 options: {
                     inline: true,
                     nodes: ["console.log", "debug"]
