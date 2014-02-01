@@ -19,7 +19,8 @@ requirejs.config({
         'backbone': '../systems/libs/backbone.min',
         'i18n': '../systems/libs/i18n.min',
         'json3': '../systems/libs/json3.min',
-        'text': '../systems/libs/text'
+        'text': '../systems/libs/text',
+        'templates': '../../templates'        
     },
 
     /***
@@ -57,7 +58,7 @@ require(['app', 'router/router', 'core', 'i18n'], function(AppView, Router, Core
     i18n.init({
         lng: 'en',
         debug: true,
-        fallbackLng: false,
+        fallbackLng: 'en',
         load:'unspecific',
         resGetPath: "locales/__lng__/__ns__.json",
         ns: {
@@ -65,6 +66,8 @@ require(['app', 'router/router', 'core', 'i18n'], function(AppView, Router, Core
             defaultNs: 'translation'
         }
     });
+
+
 
     /***
      * The router now has a copy of all main appview
