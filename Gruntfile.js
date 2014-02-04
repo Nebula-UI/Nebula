@@ -161,22 +161,21 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        recess: {
+        less: {
             options: {
-                compile: true
+                compress: true
             },
             main: {
                 files: {
-                    "src/stylesheets/css/common.css": [
-                        "src/stylesheets/less/common.less"
-                    ]
+                    "src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
+                    "src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
                 }
             }
         },
         watch: {
             less: {
                 files: ["src/stylesheets/less/**/*.less"],
-                tasks: ["recess:main"],
+                tasks: ["less:main"],
                 options: {
                     spawn: false
                 }
@@ -205,21 +204,21 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load NPM Task
+    // Load NPM task
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-jscs-checker");
     grunt.loadNpmTasks("grunt-contrib-csslint");
     grunt.loadNpmTasks('grunt-htmlhint');
-    grunt.loadNpmTasks("grunt-recess");
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
 
     // Load Default Task.
-    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
+    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "less", "csslint"]);
 
     // Load Build Task;
-    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "strip"]);
+    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "less", "csslint", "shell", "strip"]);
 };
