@@ -3,6 +3,14 @@
  */
 
 /***
+ * Fonts
+ */
+@font-face {
+    font-family: "segoeui";
+    src: url("../../../assets/fonts/segoeui.ttf");
+}
+
+/***
  *Links
  */
 a, a:focus, a:hover {
@@ -17,6 +25,7 @@ html, body {
     background-color: @gray-dark;
 }
 body {
+    font-family: "segoeui", segoeui, serif;
     color: @white;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -63,7 +72,6 @@ body {
     padding-left: 0;
     padding-right: 0;
     font-size: 16px;
-    font-weight: bold;
     color: @white; /* IE8 proofing */
     color: rgba(255,255,255,.75);
     border-bottom: 2px solid transparent;
