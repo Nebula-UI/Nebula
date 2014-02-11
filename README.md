@@ -1,4 +1,4 @@
-Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)  [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)  [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Code Climate](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/badges/a73df6c9e5472e6b867d/gpa.png)](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/feed)  [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 ======
 Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
