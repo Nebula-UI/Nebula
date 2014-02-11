@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         jshint: {
             all: ["src/apps/**/*.js"],
             options: {
-                ignores: ["src/main.js", "src/systems/libs/**/*.js"],
+                ignores: ["src/main.js", "src/systems/libs/**/*.js", "src/systems/frameworks/**/*.js"],
                 "strict": true,
                 "curly": true,
                 "eqeqeq": true,
