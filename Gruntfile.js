@@ -161,14 +161,35 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        recess: {
-            options: {
-                compile: true
-            },
-            main: {
+        less: {
+            readyMade: {
+                options: {
+                    compress: true
+                },
                 files: {
-                    "src/stylesheets/css/common.css": [
-                        "src/stylesheets/less/common.less"
+                    "src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
+                    "src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
+                }
+            },
+            customMade: {
+                options: {
+                    compress: false
+                },
+                files: {
+                    "src/stylesheets/css/common/common.css": [
+                        "src/stylesheets/less/common/imports.less"
+                    ]
+                }
+            },
+            prod: {
+                options: {
+                    compress: true
+                },
+                files: {
+                    "src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
+                    "src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less",
+                    "src/stylesheets/css/common/common.css": [
+                        "src/stylesheets/less/common/imports.less"
                     ]
                 }
             }
@@ -176,7 +197,7 @@ module.exports = function(grunt) {
         watch: {
             less: {
                 files: ["src/stylesheets/less/**/*.less"],
-                tasks: ["recess:main"],
+                tasks: ["less:customMade"],
                 options: {
                     spawn: false
                 }
@@ -205,21 +226,21 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load NPM Task
+    // Load NPM task
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-jscs-checker");
     grunt.loadNpmTasks("grunt-contrib-csslint");
     grunt.loadNpmTasks('grunt-htmlhint');
-    grunt.loadNpmTasks("grunt-recess");
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
 
     // Load Default Task.
-    grunt.registerTask("default", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint"]);
+    grunt.registerTask("default", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
 
     // Load Build Task;
-    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "recess", "csslint", "shell", "strip"]);
+    grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "less:prod", "csslint", "shell", "strip"]);
 };
