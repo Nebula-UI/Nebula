@@ -4,7 +4,7 @@ Nebula is an open source application skeleton for a typical Backbone web apps. Y
 
 Author
 ======
-Name: <b>Ashwin Hegde</b>. Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
+Name: <a href="//github.com/hegdeashwin" target="_blank">Ashwin Hegde</a>. Follow me at: <a href="//github.com/users/follow?target=hegdeashwin" target="_blank">github</a> | <a href="//in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="//twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
 License
 =======
