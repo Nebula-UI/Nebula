@@ -1,4 +1,6 @@
-[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](https://travis-ci.org/hegdeashwin/Nebula)  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](https://travis-ci.org/hegdeashwin/Nebula)  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+======
+Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
 License
 =======
@@ -22,5 +24,3 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
