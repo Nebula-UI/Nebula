@@ -2,6 +2,10 @@ Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=maste
 ======
 Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
+Author
+======
+Name: <b>Ashwin Hegde</b>. Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
+
 License
 =======
 The MIT License (MIT)
