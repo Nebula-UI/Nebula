@@ -6,6 +6,10 @@ Author
 ======
 Name: <a href="//github.com/hegdeashwin" target="_blank">Ashwin Hegde</a>. Follow me at: <a href="//github.com/users/follow?target=hegdeashwin" target="_blank">github</a> | <a href="//in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="//twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
+Acknowledgement
+===============
+We really appreciate all kind of contributions. Special Thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
+
 License
 =======
 The MIT License (MIT)
