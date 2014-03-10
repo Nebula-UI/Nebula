@@ -21,6 +21,16 @@ To start the server:
 node server.js
 ```
 
+Libraries/frameworks used
+=========================
+<ul>
+	<li><a href="//jquery.com/" target="_blank">jQuery.js v2.0.3</a></li>
+	<li><a href="//backbonejs.org/" target="_blank">Underscore.js v1.5.2</a></li>
+	<li><a href="//underscorejs.org/" target="_blank">Backbone.js v1.1</a></li>
+	<li><a href="//requirejs.org/" target="_blank">Require.js v1.2.10</a></li>
+	<li><a href="//getbootstrap.com/" target="_blank">Bootstrap v3.0.0</a></li>
+</ul>
+
 Author
 ======
 Name: <a href="//github.com/hegdeashwin" target="_blank">Ashwin Hegde</a>. Follow me at: <a href="//github.com/users/follow?target=hegdeashwin" target="_blank">github</a> | <a href="//in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="//twitter.com/hegdeashwin3" target="_blank">Twitter</a>
