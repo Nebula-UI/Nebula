@@ -2,6 +2,18 @@ Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=maste
 ======
 Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
+Installation
+============
+Assuming that Git is already installed & running:
+```
+git clone https://github.com/hegdeashwin/Nebula
+```
+
+Assuming that Node.js is already installed & running, To start the server run
+```
+node server.js
+```
+
 Author
 ======
 Name: <a href="//github.com/hegdeashwin" target="_blank">Ashwin Hegde</a>. Follow me at: <a href="//github.com/users/follow?target=hegdeashwin" target="_blank">github</a> | <a href="//in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="//twitter.com/hegdeashwin3" target="_blank">Twitter</a>
