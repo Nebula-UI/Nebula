@@ -8,7 +8,7 @@ Name: <a href="//github.com/hegdeashwin" target="_blank">Ashwin Hegde</a>. Follo
 
 Acknowledgement
 ===============
-We really appreciate all kind of contributions. Special Thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
+We really appreciate all kind of contributions. <br/>Special Thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
 
 License
 =======
