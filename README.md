@@ -9,7 +9,14 @@ Assuming that Git is already installed & running:
 git clone https://github.com/hegdeashwin/Nebula
 ```
 
-Assuming that Node.js is already installed & running, To start the server run
+Assuming that Node.js is already installed & running, 
+
+Install dependencies:
+```
+npm install
+```
+
+To start the server:
 ```
 node server.js
 ```
