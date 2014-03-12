@@ -2,6 +2,18 @@ Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=maste
 ======
 Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
+Prerequisites
+=============
+As Nebula is based on Backbone.js. It is assumed user already knows JavaScript, jQuery, Backbone.js and Underscore.js.
+If you are looking for learning Backbone.js, Visit <a href="//github.com/hegdeashwin/Backbone" target="_blank">github.com/hegdeashwin/Backbone</a>.
+
+For understanding Nebula architecure, knowledge of following JavaScript library/framework is MUST.
+<ul>
+	<li>Require.js</li>
+	<li>Bootstrap Framework 3.0 or Above.</li>
+</ul>
+
+
 Installation
 ============
 Assuming that Git is already installed & running:
@@ -20,18 +32,6 @@ To start the server:
 ```
 node server.js
 ```
-
-Prerequisites
-=============
-As Nebula is based on Backbone.js. It is assumed user already knows JavaScript, jQuery, Backbone.js and Underscore.js.
-If you are looking for learning Backbone.js, Visit <a href="//github.com/hegdeashwin/Backbone" target="_blank">github.com/hegdeashwin/Backbone</a>.
-
-For understanding Nebula architecure, knowledge of following JavaScript library/framework is MUST.
-<ul>
-	<li>Require.js</li>
-	<li>Bootstrap Framework 3.0 or Above.</li>
-</ul>
-
 
 Libraries/frameworks used
 =========================
