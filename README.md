@@ -33,6 +33,33 @@ To start the server:
 node server.js
 ```
 
+Client Layer
+============
+The client side codebase resides in the ```src``` folder. This folder contains following subfolders.
+
+```
++-- /stylesheets
+	+--/css
+	+--/less
++-- /systems
+	+--/frameworks
+	+--/libs
+	+--/utilities
++-- /templates
++-- /locales
+	+--/en
++-- /assets
+	+--/fonts
+	+--/icons
+	+--/images
++-- /apps
+	+--/models
+	+--/views
+	+--/collections
+	+--/router
+	+--/core
+```
+
 Libraries/frameworks used
 =========================
 <ul>
