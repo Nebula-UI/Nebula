@@ -41,6 +41,9 @@
         "grunt-shell": "~0.6.4",
         "grunt-qunit-istanbul": "~0.4.0"
     },
+    "keywords": [
+        "backbone", "framework", "web", "rest", "restful", "node", "express", "architecture"
+    ],
     "engines": {
         "node": ">=0.10"
     },
@@ -50,8 +53,5 @@
     "licenses": [{
         "type": "MIT",
         "url": "//raw.github.com/hegdeashwin/Nebula/master/LICENSE"
-    }],
-    "keywords": [
-        "backbone"
-    ]
+    }]    
 }
