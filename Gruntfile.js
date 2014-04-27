@@ -226,7 +226,7 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load NPM task
+    // Load NPM task.
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-contrib-jshint");
@@ -238,9 +238,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
 
-    // Load Default Task.
+    // Load default task for development codebase.
     grunt.registerTask("default", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
 
-    // Load Build Task;
+    // Load default task to compile less files.
+    grunt.registerTask("compileless", ["less:readyMade", "less:customMade"]);
+
+    // Load default task to build production codebase.
     grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "less:prod", "csslint", "shell", "strip"]);
 };
