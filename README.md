@@ -43,7 +43,7 @@ NODE_ENV=production node server.js
 
 Server layer
 ============
-The server side codebase resides in the file server.js and config.js. By default, the server layer is written in JavaScript (Node.jS).  Nebula is flexible to work with any server side scripting language like Java, PHP, ASP.NET or other. As Client layer and server layer are seperate entity.
+The server side codebase resides in the files server.js and config.js. By default, the server layer is written in JavaScript (Node.jS).  Nebula is flexible to work with any server side scripting language like Java, PHP, ASP.NET or other. As Client layer and server layer are seperate entity.
 
 Client layer
 ============
