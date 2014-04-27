@@ -64,6 +64,17 @@ Task automation
 ===============
 These task automations has been written to detect errors and potential problems in codebase and to enforce your team's coding conventions. It is very flexible so you can easily adjust it to your particular coding guidelines and the environment you expect your code to execute in.
 
+**Individual tasks**
+
+| Command                     | Task performed              |
+| --------------------------- |:---------------------------:|
+| grunt htmllint              | Perform the task to detect errors and issues for HTML documents for index.html and templates. |
+| grunt csslint               | Perform the task to detect errors and issues for CSS stylesheets. |
+| grunt jshint                | Perform the task to detect errors and issues for JavaScript. |
+| grunt jscs                  | Perform the task to detect unwanted spacing etc. for JavaScript. |
+| grunt less:readyMade        | Perform the task to compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
+| grunt less:customMade       | Perform the task to compile all the less files. The files which created by users as their custom stylesheets.
+
 **Combine tasks**
 
 | Command                     | Task performed              |
