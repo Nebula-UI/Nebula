@@ -1,40 +1,46 @@
 /***
  * Build-in | Third party module dependencies.
  */
-
 var express = require('express'),
 	http = require('http'),
-	path = require('path');
+	path = require('path'),
+	favicon = require('static-favicon'),
+	logger = require('morgan'),
+	cookieParser = require('cookie-parser'),
+	bodyParser = require('body-parser');
 
 var app = express(),
 	config = require("./config");
 
-/**
- * Application Configurations for Development Environment.
- * NODE_ENV=development node server.js
- ***/
-app.configure('development', function() {
-	app.set('port', process.env.PORT || config.server.dev.port);
-	app.set(express.methodOverride());
-	app.use(express.bodyParser());
-	app.use(express.errorHandler({
-		dumpExceptions: true,
-		showStack: true
-	}));
-	app.use(express.static(path.join(__dirname, config.server.dev.codebase)));
-});
+var env = process.env.NODE_ENV || 'development';
 
 /**
- * Application Configurations for Production Environment.
+ * Application configurations for development environment.
+ * NODE_ENV=development node server.js
+ ***/
+if ('development' === env) {
+	app.set('port', process.env.PORT || config.server.dev.port);
+	app.use(favicon());
+	app.use(logger('dev'));
+	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded());
+	app.use(cookieParser());
+	app.use(express.static(path.join(__dirname, config.server.dev.codebase)));
+}
+
+/**
+ * Application configurations for production environment.
  * NODE_ENV=production node server.js
  ***/
-app.configure('production', function() {
+if ('production' === env) {
 	app.set('port', process.env.PORT || config.server.prod.port);
-	app.set(express.methodOverride());
-	app.use(express.json());
-	app.use(express.urlencoded());
+	app.use(favicon());
+	app.use(logger('prod'));
+	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded());
+	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.prod.codebase)));
-});
+}
 
 http.createServer(app).listen(app.get('port'), function() {
 	console.log("\n\n\tNode (Express) server listening on port " + app.get('port'));

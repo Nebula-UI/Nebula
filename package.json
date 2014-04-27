@@ -25,7 +25,11 @@
         "url": "//github.com/hegdeashwin/Nebula/wiki"
     },
     "dependencies": {
-        "express": "~3.4.7"
+        "express": "~4.1.0",
+        "static-favicon": "~1.0.0",
+        "morgan": "~1.0.0",
+        "cookie-parser": "~1.0.1",
+        "body-parser": "~1.0.0"
     },
     "devDependencies": {
         "grunt": "~0.4.4",
@@ -53,5 +57,5 @@
     "licenses": [{
         "type": "MIT",
         "url": "//raw.github.com/hegdeashwin/Nebula/master/LICENSE"
-    }]    
+    }]
 }
