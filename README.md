@@ -33,7 +33,7 @@ To start the server:
 node server.js
 ```
 
-Client Layer
+Client layer
 ============
 The client side codebase resides in the ```src``` folder. This folder contains following subfolders.
 
@@ -59,6 +59,18 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 	+--/router
 	+--/core
 ```
+
+Task automation
+===============
+These task automations has been written to detect errors and potential problems in codebase and to enforce your team's coding conventions. It is very flexible so you can easily adjust it to your particular coding guidelines and the environment you expect your code to execute in.
+
+**Combine tasks**
+
+| Command                     | Task performed              |
+| --------------------------- |:---------------------------:|
+| grunt default               | Executing this command will perform the task to detect errors and issues for HTML, CSS, JavaScript and less compilation to CSS. It includes jshint, jscs, htmlhint, csslint, less:readyMade, less:customMade. |
+| grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
+| grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 
 Libraries/frameworks used
 =========================
