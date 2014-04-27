@@ -13,7 +13,6 @@ For understanding Nebula architecure, knowledge of following JavaScript librarie
 	<li>Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
 </ul>
 
-
 Installation
 ============
 Assuming that Git is already installed & running:
@@ -28,10 +27,23 @@ Install dependencies:
 npm install
 ```
 
-To start the server:
+To start the development server:
 ```
 node server.js
 ```
+or
+```
+NODE_ENV=development node server.js
+```
+
+To start the production server:
+```
+NODE_ENV=production node server.js
+```
+
+Server layer
+============
+The server side codebase resides in the file server.js and config.js. By default, the server layer is written in JavaScript (Node.jS).  Nebula is flexible to work with any server side scripting language like Java, PHP, ASP.NET or other. As Client layer and server layer are seperate entity.
 
 Client layer
 ============
