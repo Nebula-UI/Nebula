@@ -1,6 +1,6 @@
 Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)  [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Code Climate](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/badges/a73df6c9e5472e6b867d/gpa.png)](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/feed)  [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hegdeashwin/nebula/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 ======
-Nebula is an open source application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
+Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
 Prerequisites
 =============
@@ -43,7 +43,7 @@ NODE_ENV=production node server.js
 
 Server layer
 ============
-The server side codebase resides in the files server.js and config.js. By default, the server layer is written in JavaScript (Node.jS).  Nebula is flexible to work with any server side scripting language like Java, PHP, ASP.NET or other. As Client layer and server layer are seperate entity.
+The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.0) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
 
 Client layer
 ============
@@ -97,13 +97,14 @@ These task automations has been written to detect errors and potential problems 
 
 Libraries/frameworks used
 =========================
-<ul>
-	<li><a href="//jquery.com/" target="_blank">jQuery.js v2.0.3</a></li>
-	<li><a href="//backbonejs.org/" target="_blank">Underscore.js v1.5.2</a></li>
-	<li><a href="//underscorejs.org/" target="_blank">Backbone.js v1.1</a></li>
-	<li><a href="//requirejs.org/" target="_blank">Require.js v1.2.10</a></li>
-	<li><a href="//getbootstrap.com/" target="_blank">Bootstrap v3.0.0</a></li>
-</ul>
+| Name                        											 | Version        |
+| ---------------------------------------------------------------------- |:--------------:|
+| <a href="//jquery.com/" target="_blank">jQuery</a>        			 | 2.0.3 		  |
+| <a href="//backbonejs.org/" target="_blank">Underscore</a>          	 | 1.1 			  |
+| <a href="//underscorejs.org/" target="_blank">Backbone</a>          	 | 1.5.2 		  |
+| <a href="//requirejs.org/" target="_blank">Require (AMD)</a>   		 | 1.2.10 		  |
+| <a href="//getbootstrap.com/" target="_blank">Twitter Bootstrap</a>  	 | 3.1.0  		  |
+
 
 Author
 ======
