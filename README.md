@@ -104,8 +104,8 @@ Libraries/frameworks used
 | Name                        											 | Version        |
 | ---------------------------------------------------------------------- |:--------------:|
 | <a href="//jquery.com/" target="_blank">jQuery</a>        			 | 2.0.3 		  |
-| <a href="//backbonejs.org/" target="_blank">Underscore</a>          	 | 1.1 			  |
-| <a href="//underscorejs.org/" target="_blank">Backbone</a>          	 | 1.5.2 		  |
+| <a href="//backbonejs.org/" target="_blank">Underscore</a>          	 | 1.5.2     	  |
+| <a href="//underscorejs.org/" target="_blank">Backbone</a>          	 | 1.1 		      |
 | <a href="//requirejs.org/" target="_blank">Require (AMD)</a>   		 | 1.2.10 		  |
 | <a href="//getbootstrap.com/" target="_blank">Twitter Bootstrap</a>  	 | 3.1.0  		  |
 
