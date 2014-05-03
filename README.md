@@ -1,5 +1,9 @@
-Nebula [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)  [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Code Climate](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/badges/a73df6c9e5472e6b867d/gpa.png)](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/feed)  [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hegdeashwin/nebula/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-======
+# Nebula 
+
+[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula)  [![Code Climate](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/badges/a73df6c9e5472e6b867d/gpa.png)](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/feed)   [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hegdeashwin/nebula/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+
 Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
 Prerequisites
@@ -105,6 +109,15 @@ Libraries/frameworks used
 | <a href="//requirejs.org/" target="_blank">Require (AMD)</a>   		 | 1.2.10 		  |
 | <a href="//getbootstrap.com/" target="_blank">Twitter Bootstrap</a>  	 | 3.1.0  		  |
 
+Special editions
+================
+<ul>
+	<li>
+		<a href="//github.com/hegdeashwin/Nebula-Marionette-Edition" target="_blank">Nebula - Marionette edition: </a>An open source walking application skeleton based on Nebula architecture for a typical Backbone-Marionette web apps. You can use it to quickly bootstrap your Backbone-Marionette web application projects.
+
+		For more information visit <a href="//marionettejs.com/" target="_blank">http://marionettejs.com/</a>
+	</li>
+</ul>
 
 Author & Contributors
 =====================
