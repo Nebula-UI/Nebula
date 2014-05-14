@@ -78,18 +78,23 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 
 Task automation
 ===============
-These task automations has been written to detect errors and potential problems in codebase and to enforce your team's coding conventions. It is very flexible so you can easily adjust it to your particular coding guidelines and the environment you expect your code to execute in.
+Nebula comes with Grunt ecosystem - a JavaScript task runner to perform repetitive tasks like minification, compilation, unit testing, linting etc. Many of the tasks you need are already available as published Grunt plugins.
+
+Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions. 
+
+Following are the default Grunt plugins that has been integrated with Nebula architecture.
 
 **Individual tasks**
 
-| Command                     | Task performed              |
-| --------------------------- |:---------------------------:|
-| grunt htmllint              | Perform the task to detect errors and issues for HTML documents for index.html and templates. |
-| grunt csslint               | Perform the task to detect errors and issues for CSS stylesheets. |
-| grunt jshint                | Perform the task to detect errors and issues for JavaScript. |
-| grunt jscs                  | Perform the task to detect unwanted spacing etc. for JavaScript. |
-| grunt less:readyMade        | Perform the task to compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
-| grunt less:customMade       | Perform the task to compile all the less files. The files which created by users as their custom stylesheets.
+| Grunt Plugin 			 | Command                  | Task Performed              |
+| -----------------------|:------------------------:|:---------------------------:|
+| grunt-htmlhint		 | grunt htmllint           | Detect errors and issues for HTML documents for index.html and templates. |
+| grunt-contrib-csslint	 | grunt csslint            | Detect errors and issues for CSS stylesheets. |
+| grunt-contrib-jshint	 | grunt jshint             | Detect errors and issues for JavaScript. |
+| grunt-jscs-checker	 | grunt jscs               | Detect unwanted spacing etc. for JavaScript. |
+| grunt-contrib-less	 | grunt less:readyMade     | Compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
+| grunt-contrib-less     | grunt less:customMade    | Compile all the less files. The files which created by users as their custom stylesheets.
+| grunt-contrib-watch	 | grunt watch 				| Keep watch on less folders & files. Any changes in less file will automatically compile all the less files. |
 
 **Combine tasks**
 
