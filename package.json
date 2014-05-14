@@ -29,7 +29,7 @@
         "static-favicon": "~1.0.0",
         "morgan": "~1.0.0",
         "cookie-parser": "~1.0.1",
-        "body-parser": "~1.0.0"
+        "body-parser": "~1.2.0"
     },
     "devDependencies": {
         "grunt": "~0.4.4",
@@ -42,7 +42,7 @@
         "grunt-contrib-less": "~0.11.0",
         "grunt-contrib-watch": "~0.6.0  ",
         "grunt-strip": "~0.2.1",
-        "grunt-shell": "~0.6.4",
+        "grunt-shell": "~0.7.0",
         "grunt-qunit-istanbul": "~0.4.0"
     },
     "keywords": [
