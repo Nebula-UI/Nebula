@@ -25,10 +25,10 @@
         "url": "//github.com/hegdeashwin/Nebula/wiki"
     },
     "dependencies": {
-        "express": "~4.1.0",
+        "express": "~4.2.0",
         "static-favicon": "~1.0.0",
         "morgan": "~1.0.0",
-        "cookie-parser": "~1.0.1",
+        "cookie-parser": "~1.1.0",
         "body-parser": "~1.2.0"
     },
     "devDependencies": {
