@@ -269,7 +269,7 @@ module.exports = function(grunt) {
     /**
      * Define tasks : Tasks for Development eco - system.
      */
-    grunt.registerTask("dev", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
+    grunt.registerTask("default", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
 
     /**
      * Define tasks : Tasks for build eco - system.
