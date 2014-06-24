@@ -1,7 +1,15 @@
 module.exports = function(grunt) {
     "use strict";
 
+    /**
+     * Require it at the top and pass in the grunt instance
+     */
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
+        /**
+         * Setup configuration
+         */
         clean: {
             build: ["prod"]
         },
@@ -56,21 +64,39 @@ module.exports = function(grunt) {
                 }
             }
         },
+        /**
+         * Note*: For `jscs` task : few configuration setting are turned off which can be change as per your requirements.
+         */
         jscs: {
             src: "src/apps/**/*.js",
             options: {
+                "excludeFiles": ["src/systems/libs/**/*.js", "src/main.js"],
                 "requireCurlyBraces": ["if", "else", "for", "while", "do", "try", "catch"],
                 "requireSpaceAfterKeywords": ["if", "else", "for", "while", "do", "switch", "return", "try", "catch"],
-                "disallowLeftStickedOperators": ["?", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
-                "disallowRightStickedOperators": ["?", "+", "/", "*", ":", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<="],
-                "requireRightStickedOperators": ["!"],
-                "requireLeftStickedOperators": [","],
+                // "requireSpaceBeforeBinaryOperators": true,
+                // "requireSpaceBeforePostfixUnaryOperators": true,
+                // "requireSpacesInConditionalExpression": {
+                //     "afterTest": true,
+                //     "beforeConsequent": true,
+                //     "afterConsequent": true,
+                //     "beforeAlternate": true
+                // },
+                // "requireSpaceAfterBinaryOperators": true,
+                // "requireSpaceAfterPrefixUnaryOperators": true,
+                // "disallowSpaceBeforeBinaryOperators": true,
+                // "disallowSpaceBeforePostfixUnaryOperators": true,
+                // "disallowSpacesInConditionalExpression": {
+                //     "afterTest": true,
+                //     "beforeConsequent": true,
+                //     "afterConsequent": true,
+                //     "beforeAlternate": true
+                // },
+                // "disallowSpaceAfterBinaryOperators": true,
+                // "disallowSpaceAfterPrefixUnaryOperators": true,
                 "disallowImplicitTypeConversion": ["string"],
                 "disallowKeywords": ["with"],
                 "disallowMultipleLineBreaks": true,
                 "disallowKeywordsOnNewLine": ["else"],
-                //"requireLineFeedAtFileEnd": true, // requireLineFeedAtFileEnd option requires true value or should be removed
-                "excludeFiles": ["src/systems/libs/**/*.js", "src/main.js"],
                 "validateJSDoc": {
                     "checkParamNames": true,
                     "requireParamTypes": true
@@ -226,7 +252,9 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load NPM task.
+    /**
+     * Load tasks
+     */
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-contrib-jshint");
@@ -238,12 +266,18 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-qunit-istanbul");
     grunt.loadNpmTasks("grunt-strip");
 
-    // Load default task for development codebase.
-    grunt.registerTask("default", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
+    /**
+     * Define tasks : Tasks for Development eco - system.
+     */
+    grunt.registerTask("dev", ["jshint", "jscs", "htmlhint", "less:readyMade", "less:customMade", "csslint"]);
 
-    // Load default task to compile less files.
-    grunt.registerTask("compileless", ["less:readyMade", "less:customMade"]);
-
-    // Load default task to build production codebase.
+    /**
+     * Define tasks : Tasks for build eco - system.
+     */
     grunt.registerTask("build", ["clean", "jshint", "jscs", "htmlhint", "less:prod", "csslint", "shell", "strip"]);
+
+    /**
+     * Define sub-tasks : Tasks for Less compilation.
+     */
+    grunt.registerTask("compileless", ["less:readyMade", "less:customMade"]);
 };

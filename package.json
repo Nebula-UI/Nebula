@@ -43,7 +43,8 @@
         "grunt-contrib-watch": "~0.6.0  ",
         "grunt-strip": "~0.2.1",
         "grunt-shell": "~0.7.0",
-        "grunt-qunit-istanbul": "~0.4.0"
+        "grunt-qunit-istanbul": "~0.4.0",
+        "time-grunt": "~0.3.2"
     },
     "keywords": [
         "backbone", "framework", "web", "rest", "restful", "node", "express", "architecture"
