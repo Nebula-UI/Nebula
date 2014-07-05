@@ -43,6 +43,8 @@
         "grunt-contrib-watch": "~0.6.0  ",
         "grunt-strip": "~0.2.1",
         "grunt-shell": "~0.7.0",
+        "grunt-contrib-htmlmin": "~0.3.0",
+        "grunt-autoprefixer": "~0.7.6",
         "grunt-qunit-istanbul": "~0.4.0",
         "time-grunt": "~0.3.2"
     },
