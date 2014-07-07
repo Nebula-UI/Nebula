@@ -23,7 +23,9 @@ if ('development' === env) {
 	app.use(favicon());
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
-	app.use(bodyParser.urlencoded());
+	app.use(bodyParser.urlencoded({
+		extended: false
+	}));
 	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.dev.codebase)));
 }
@@ -37,7 +39,9 @@ if ('production' === env) {
 	app.use(favicon());
 	app.use(logger('prod'));
 	app.use(bodyParser.json());
-	app.use(bodyParser.urlencoded());
+	app.use(bodyParser.urlencoded({
+		extended: false
+	}));
 	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.prod.codebase)));
 }
