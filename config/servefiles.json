@@ -1,0 +1,69 @@
+{
+	"jshint": {
+		"files": [
+			"src/apps/**/*.js"
+		],
+		"ignore": [
+			"src/main.js",
+			"src/systems/libs/**/*.js",
+			"src/systems/frameworks/**/*.js"
+		]
+	},
+	"jscs": {
+		"files": [
+			"src/apps/**/*.js"
+		]
+	},
+	"csslint": {
+		"files": [
+			"src/stylesheets/css/**/*.css"
+		],
+		"ignore": [
+			"src/systems/libs/**/*.css",
+			"src/systems/frameworks/**/*.css"
+		]
+	},
+	"htmlhint": {
+		"Root_HTML_Files": {
+			"files": [
+				"src/*.html"
+			],
+			"ignore": []
+		},
+		"Templates": {
+			"files": [
+				"src/templates/**/*.html"
+			],
+			"ignore": []
+		}
+	},
+	"less": {
+		"readyMade": {
+			"files": {
+				"src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
+				"src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
+			}
+		},
+		"customMade": {
+			"files": {
+				"src/stylesheets/css/common/common.css": [
+					"src/stylesheets/less/common/imports.less"
+				]
+			}
+		}
+	},
+	"watch": {
+		"less": {
+			"files": [
+				"src/stylesheets/less/**/*.less"
+			]
+		}
+	},
+	"htmlmin": {
+		"files": {
+			"prod/index.html": "prod/index.html",
+			"prod/templates/homeTpl.html": "prod/templates/homeTpl.html",
+			"prod/templates/aboutTpl.html": "prod/templates/aboutTpl.html"
+		}
+	}
+}

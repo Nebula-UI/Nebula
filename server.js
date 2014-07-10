@@ -10,7 +10,7 @@ var express = require('express'),
 	bodyParser = require('body-parser');
 
 var app = express(),
-	config = require("./config");
+	config = require("./tools/config");
 
 var env = process.env.NODE_ENV || 'development';
 

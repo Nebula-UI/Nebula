@@ -10,53 +10,52 @@ module.exports = function(grunt) {
      * Setup configuration
      */
     grunt.initConfig({
+        configuredFiles: grunt.file.readJSON('config/servefiles.json'),
         clean: {
             build: ["prod"]
         },
         shell: {
             uglify: {
-                command: "node r.js -o build.js"
+                command: "node tools/r.js -o config/build.js"
             }
         },
         jshint: {
-            all: ["src/apps/**/*.js"],
             options: {
-                ignores: ["src/main.js", "src/systems/libs/**/*.js", "src/systems/frameworks/**/*.js"],
-                jshintrc: 'config/.jshintrc'
-            }
+                jshintrc: "config/.jshintrc",
+                ignores: "<%= configuredFiles.jshint.ignore %>"
+            },
+            all: "<%= configuredFiles.jshint.files %>"            
         },
         jscs: {
-            src: "src/apps/**/*.js",
             options: {
                 config: "config/.jscsrc"
-            }
+            },
+            src: "<%= configuredFiles.jscs.files %>",
         },
         csslint: {
             strict: {
-                src: [
-                    "src/stylesheets/css/**/*.css"
-                ],
                 options: {
-                    csslintrc: 'config/.csslintrc'
-                }
+                    csslintrc: 'config/.csslintrc',
+                    ignores: "<%= configuredFiles.csslint.ignore %>"
+                },
+                src: "<%= configuredFiles.csslint.files %>"                
             }
         },
         htmlhint: {
             Root_HTML_Files: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-n-rc'
+                    htmlhintrc: 'config/.htmlhint-n-rc',
+                    ignores: "<%= configuredFiles.htmlhint.Root_HTML_Files.ignore %>"
                 },
-                src: [
-                    "src/*.html"
-                ]
+                src: "<%= configuredFiles.htmlhint.Root_HTML_Files.files %>"
             },
             Templates: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-t-rc'
+                    htmlhintrc: 'config/.htmlhint-t-rc',
+                    ignores: "<%= configuredFiles.htmlhint.Templates.ignore %>"
                 },
-                src: [
-                    "src/templates/**/*.html"
-                ]
+                src: "<%= configuredFiles.htmlhint.Templates.files %>"
+                
             }
         },
         less: {
@@ -64,41 +63,28 @@ module.exports = function(grunt) {
                 options: {
                     compress: true
                 },
-                files: {
-                    "src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
-                    "src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
-                }
+                files: "<%= configuredFiles.less.readyMade.files %>"
             },
             customMade: {
                 options: {
                     compress: false
                 },
-                files: {
-                    "src/stylesheets/css/common/common.css": [
-                        "src/stylesheets/less/common/imports.less"
-                    ]
-                }
+                files: "<%= configuredFiles.less.customMade.files %>"
             },
             prod: {
                 options: {
                     compress: true
                 },
-                files: {
-                    "src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
-                    "src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less",
-                    "src/stylesheets/css/common/common.css": [
-                        "src/stylesheets/less/common/imports.less"
-                    ]
-                }
+                files: "<%= configuredFiles.less.customMade.files %>"
             }
         },
         watch: {
             less: {
-                files: ["src/stylesheets/less/**/*.less"],
-                tasks: ["less:customMade"],
                 options: {
                     spawn: false
-                }
+                },
+                files: "<%= configuredFiles.watch.less.files %>" ,
+                tasks: ["less:customMade"]
             }
         },
         qunit: {
@@ -126,7 +112,6 @@ module.exports = function(grunt) {
             options: {
                 "browsers": ["ie 8", "ie 9", "Firefox >= 17", "ios 7", "last 10 Chrome versions", "last 2 Safari versions", "Android 4"]
             },
-
             multiple: {
                 expand: true,
                 flatten: true,
@@ -140,11 +125,7 @@ module.exports = function(grunt) {
                     removeComments: true,
                     collapseWhitespace: true
                 },
-                files: {
-                    "prod/index.html": "prod/index.html",
-                    "prod/templates/homeTpl.html": "prod/templates/homeTpl.html",
-                    "prod/templates/aboutTpl.html": "prod/templates/aboutTpl.html"
-                }
+                files: "<%= configuredFiles.htmlmin.files %>"
             }
         }
     });
