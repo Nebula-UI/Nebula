@@ -1,5 +1,6 @@
-node_modules
-prod
+node_modules/
+prod/
 /src/stylesheets/css/
 /src/systems/frameworks/bootstrap/css/
-Release
+Release/
+npm-debug.log
