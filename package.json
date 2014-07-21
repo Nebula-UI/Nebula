@@ -45,7 +45,7 @@
         "grunt-shell": "~0.7.0",
         "grunt-contrib-htmlmin": "~0.3.0",
         "grunt-autoprefixer": "~0.8.1",
-        "grunt-contrib-qunit": "~0.5.2",
+        "grunt-contrib-qunit": "~0.5.1",
         "time-grunt": "~0.4.0"
     },
     "keywords": [
