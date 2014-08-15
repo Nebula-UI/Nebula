@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-    "use strict";
+    'use strict';
 
     /**
      * Require it at the top and pass in the grunt instance
@@ -12,50 +12,50 @@ module.exports = function(grunt) {
     grunt.initConfig({
         configuredFiles: grunt.file.readJSON('config/servefiles.json'),
         clean: {
-            build: ["prod"]
+            build: ['prod']
         },
         shell: {
             uglify: {
-                command: "node tools/r.js -o config/build.js"
+                command: 'node tools/r.js -o config/build.js'
             }
         },
         jshint: {
             options: {
-                jshintrc: "config/.jshintrc",
-                ignores: "<%= configuredFiles.jshint.ignore %>"
+                jshintrc: 'config/.jshintrc',
+                ignores: '<%= configuredFiles.jshint.ignore %>'
             },
-            all: "<%= configuredFiles.jshint.files %>"            
+            all: '<%= configuredFiles.jshint.files %>'
         },
         jscs: {
             options: {
-                config: "config/.jscsrc"
+                config: 'config/.jscsrc'
             },
-            src: "<%= configuredFiles.jscs.files %>",
+            src: '<%= configuredFiles.jscs.files %>',
         },
         csslint: {
             strict: {
                 options: {
                     csslintrc: 'config/.csslintrc',
-                    ignores: "<%= configuredFiles.csslint.ignore %>"
+                    ignores: '<%= configuredFiles.csslint.ignore %>'
                 },
-                src: "<%= configuredFiles.csslint.files %>"                
+                src: '<%= configuredFiles.csslint.files %>'
             }
         },
         htmlhint: {
             Root_HTML_Files: {
                 options: {
                     htmlhintrc: 'config/.htmlhint-n-rc',
-                    ignores: "<%= configuredFiles.htmlhint.Root_HTML_Files.ignore %>"
+                    ignores: '<%= configuredFiles.htmlhint.Root_HTML_Files.ignore %>'
                 },
-                src: "<%= configuredFiles.htmlhint.Root_HTML_Files.files %>"
+                src: '<%= configuredFiles.htmlhint.Root_HTML_Files.files %>'
             },
             Templates: {
                 options: {
                     htmlhintrc: 'config/.htmlhint-t-rc',
-                    ignores: "<%= configuredFiles.htmlhint.Templates.ignore %>"
+                    ignores: '<%= configuredFiles.htmlhint.Templates.ignore %>'
                 },
-                src: "<%= configuredFiles.htmlhint.Templates.files %>"
-                
+                src: '<%= configuredFiles.htmlhint.Templates.files %>'
+
             }
         },
         less: {
@@ -63,19 +63,19 @@ module.exports = function(grunt) {
                 options: {
                     compress: true
                 },
-                files: "<%= configuredFiles.less.readyMade.files %>"
+                files: '<%= configuredFiles.less.readyMade.files %>'
             },
             customMade: {
                 options: {
                     compress: false
                 },
-                files: "<%= configuredFiles.less.customMade.files %>"
+                files: '<%= configuredFiles.less.customMade.files %>'
             },
             prod: {
                 options: {
                     compress: true
                 },
-                files: "<%= configuredFiles.less.customMade.files %>"
+                files: '<%= configuredFiles.less.customMade.files %>'
             }
         },
         watch: {
@@ -83,15 +83,15 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false
                 },
-                files: "<%= configuredFiles.watch.less.files %>" ,
-                tasks: ["less:customMade"]
+                files: '<%= configuredFiles.watch.less.files %>',
+                tasks: ['less:customMade']
             }
         },
         qunit: {
             options: {
                 '--web-security': 'no',
                 coverage: {
-                    src: ['src/apps/**/*.js'],
+                    src: ['src/**/*.js'],
                     instrumentedFiles: 'temp/',
                     htmlReport: 'report/coverage',
                     coberturaReport: 'report/'
@@ -101,16 +101,16 @@ module.exports = function(grunt) {
         },
         strip: {
             main: {
-                src: "prod/src/apps/**/*.js",
+                src: 'prod/src/apps/**/*.js',
                 options: {
                     inline: true,
-                    nodes: ["console.log", "debug"]
+                    nodes: ['console.log', 'debug']
                 }
             }
         },
         autoprefixer: {
             options: {
-                "browsers": ["ie 8", "ie 9", "Firefox >= 17", "ios 7", "last 10 Chrome versions", "last 2 Safari versions", "Android 4"]
+                'browsers': ['ie 8', 'ie 9', 'Firefox >= 17', 'ios 7', 'last 10 Chrome versions', 'last 2 Safari versions', 'Android 4']
             },
             multiple: {
                 expand: true,
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
                     removeComments: true,
                     collapseWhitespace: true
                 },
-                files: "<%= configuredFiles.htmlmin.files %>"
+                files: '<%= configuredFiles.htmlmin.files %>'
             }
         }
     });
@@ -133,52 +133,52 @@ module.exports = function(grunt) {
     /**
      * Load tasks
      */
-    grunt.loadNpmTasks("grunt-contrib-clean");
-    grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.loadNpmTasks("grunt-strip");
-    grunt.loadNpmTasks("grunt-shell");
-    grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-jscs-checker");
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-strip');
+    grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks("grunt-contrib-csslint");
+    grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks("grunt-qunit-istanbul");
+    grunt.loadNpmTasks('grunt-contrib-qunit');
 
     /**
      * Define tasks : Tasks for development eco - system.
      */
-    grunt.registerTask("default", [
-        "htmlhint",
-        "csslint",
-        "jshint",
-        "jscs",
-        "less:readyMade",
-        "less:customMade",
-        "autofix"
+    grunt.registerTask('default', [
+        'htmlhint',
+        'csslint',
+        'jshint',
+        'jscs',
+        'less:readyMade',
+        'less:customMade',
+        'autofix'
     ]);
     grunt.registerTask('dev', ['default']); // Alias for `default`.
 
     /**
      * Define tasks : Tasks for build eco - system.
      */
-    grunt.registerTask("build", [
-        "htmlhint",
-        "csslint",
-        "jshint",
-        "compileless",
-        "autofix",
-        "clean",
-        "shell",
-        "strip",
-        "htmlmin"
+    grunt.registerTask('build', [
+        'htmlhint',
+        'csslint',
+        'jshint',
+        'compileless',
+        'autofix',
+        'clean',
+        'shell',
+        'strip',
+        'htmlmin'
     ]);
 
     /**
      * Define sub-tasks : Tasks for Less compilation.
      */
-    grunt.registerTask("compileless", ["less:readyMade", "less:customMade"]);
+    grunt.registerTask('compileless', ['less:readyMade', 'less:customMade']);
 
     /**
      * Define sub-tasks : Alias for `autofix`

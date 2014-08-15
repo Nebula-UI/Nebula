@@ -1,64 +1,70 @@
 {
-    "name": "Nebula",
-    "version": "0.0.1",
-    "edition": "Beta",
-    "author": "Ashwin Hegde",
-    "description": "Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.",
-    "contributors": [{
-        "name": "Ashwin Hegde",
-        "email": "github.com/hegdeashwin"
-    }],
-    "repository": {
-        "type": "git",
-        "url": "//github.com/hegdeashwin/Nebula"
-    },
-    "issues": {
-        "url": "//github.com/hegdeashwin/Nebula/issues?state=open"
-    },
-    "milestones": {
-        "url": "//github.com/hegdeashwin/Nebula/issues/milestones"
-    },
-    "releases": {
-        "url": "//github.com/hegdeashwin/Nebula/releases"
-    },
-    "wiki": {
-        "url": "//github.com/hegdeashwin/Nebula/wiki"
-    },
-    "dependencies": {
-        "express": "~4.8.0",
-        "static-favicon": "~1.0.0",
-        "morgan": "~1.2.2",
-        "cookie-parser": "~1.3.1",
-        "body-parser": "~1.6.0"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.4",
-        "grunt-cli": "~0.1.13",
-        "grunt-contrib-clean": "~0.6.0",
-        "grunt-contrib-jshint": "~0.10.0",
-        "grunt-jscs-checker": "~0.6.1",
-        "grunt-contrib-csslint": "~0.2.0",
-        "grunt-htmlhint": "~0.4.0",
-        "grunt-contrib-less": "~0.11.0",
-        "grunt-contrib-watch": "~0.6.0  ",
-        "grunt-strip": "~0.2.1",
-        "grunt-shell": "~0.7.0",
-        "grunt-contrib-htmlmin": "~0.3.0",
-        "grunt-autoprefixer": "~0.8.1",
-        "grunt-contrib-qunit": "~0.5.1",
-        "time-grunt": "~0.4.0"
-    },
-    "keywords": [
-        "backbone", "framework", "web", "rest", "restful", "node", "express", "architecture"
-    ],
-    "engines": {
-        "node": ">=0.10"
-    },
-    "scripts": {
-        "test": "grunt --verbose"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "//raw.github.com/hegdeashwin/Nebula/master/LICENSE"
-    }]
+  "name": "Nebula",
+  "version": "0.0.3",
+  "author": "Ashwin Hegde",
+  "description": "Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.",
+  "contributors": [{
+    "name": "Ashwin Hegde",
+    "email": "github.com/hegdeashwin"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/hegdeashwin/Nebula"
+  },
+  "issues": {
+    "url": "http://github.com/hegdeashwin/Nebula/issues?state=open"
+  },
+  "milestones": {
+    "url": "http://github.com/hegdeashwin/Nebula/issues/milestones"
+  },
+  "releases": {
+    "url": "http://github.com/hegdeashwin/Nebula/releases"
+  },
+  "wiki": {
+    "url": "http://github.com/hegdeashwin/Nebula/wiki"
+  },
+  "dependencies": {
+    "express": "~4.8.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.2.2",
+    "cookie-parser": "~1.3.1",
+    "body-parser": "~1.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jscs": "~0.6.2"
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-htmlhint": "~0.4.0",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.0  ",
+    "grunt-strip": "~0.2.1",
+    "grunt-shell": "~0.7.0",
+    "grunt-contrib-htmlmin": "~0.3.0",
+    "grunt-autoprefixer": "~0.8.1",
+    "grunt-contrib-qunit": "~0.5.1",
+    "time-grunt": "~0.4.0"
+  },
+  "keywords": [
+    "backbone",
+    "framework",
+    "web",
+    "rest",
+    "restful",
+    "node",
+    "express",
+    "architecture"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "test": "grunt --verbose"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://raw.github.com/hegdeashwin/Nebula/master/LICENSE"
+  }]
 }
