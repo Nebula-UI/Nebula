@@ -1,4 +1,4 @@
-{
+  {
   "name": "Nebula",
   "version": "0.0.3",
   "author": "Ashwin Hegde",
@@ -43,7 +43,7 @@
     "grunt-strip": "~0.2.1",
     "grunt-shell": "~0.7.0",
     "grunt-contrib-htmlmin": "~0.3.0",
-    "grunt-autoprefixer": "~0.8.1",
+    "grunt-autoprefixer": "~1.0.0",
     "grunt-contrib-qunit": "~0.5.1",
     "time-grunt": "~0.4.0"
   },
