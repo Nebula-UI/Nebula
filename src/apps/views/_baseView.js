@@ -15,6 +15,12 @@ define(function(require) {
 			console.log("LOG: Executed Baseview Render");
 
 			this.$el.html(this.template);
+
+			// Call the `onRender` method if it exists.
+			if(this.onRender) {
+				this.onRender();
+			}
+
 			return this;
 		}
 

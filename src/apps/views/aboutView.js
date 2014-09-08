@@ -17,6 +17,11 @@ define(function(require) {
 			this.render();
 		}
 		*/
+
+		// The `onRender` method gets called after render method. This method is optional.
+		onRender: function() {
+			console.log("LOG: Executed After Aboutview Render Method");
+		}
 		
 	});
 });
