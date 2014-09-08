@@ -1,20 +1,22 @@
 define(function(require) {
 	'use strict';
 
-	var Backbone = require('backbone'),
-		aboutTemplate = require('text!templates/aboutTpl.html');
+	var AboutTemplate = require('text!templates/aboutTpl.html'),
+		BaseView = require('views/_baseView');
 
-	return Backbone.View.extend({
+	return BaseView.extend({
 
 		el: 'body',
 
-		initialize: function() {
-			this.render();
-		},
+		template: AboutTemplate,
 
-		render: function() {
-			this.$el.html(aboutTemplate);
-			return this;
+		/* // Uncomment if you want to override baseview initialize methods.
+		initialize: function() {
+			console.log("LOG: Initialize Aboutview");
+
+			this.render();
 		}
+		*/
+		
 	});
 });

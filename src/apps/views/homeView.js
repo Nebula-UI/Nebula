@@ -1,20 +1,22 @@
 define(function(require) {
 	'use strict';
 
-	var Backbone = require('backbone'),
-		homeTemplate = require('text!templates/homeTpl.html');
+	var HomeTemplate = require('text!templates/homeTpl.html'),
+		BaseView = require('views/_baseView');
 
-	return Backbone.View.extend({
+	return BaseView.extend({
 
 		el: 'body',
 
-		initialize: function() {
-			this.render();
-		},
+		template: HomeTemplate,
 
-		render: function() {
-			this.$el.html(homeTemplate);
-			return this;
+		/* // Uncomment if you want to override baseview initialize methods.
+		initialize: function() {
+			console.log("LOG: Initialize Homeview");
+
+			this.render();
 		}
+		*/
+
 	});
 });
