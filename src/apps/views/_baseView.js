@@ -7,7 +7,7 @@ define(function(require) {
 
 		initialize: function() {
 			console.log("LOG: Initialize Baseview");
-			
+
 			this.render();
 		},
 
@@ -17,7 +17,7 @@ define(function(require) {
 			this.$el.html(this.template);
 
 			// Call the `onRender` method if it exists.
-			if(this.onRender) {
+			if (this.onRender) {
 				this.onRender();
 			}
 
