@@ -1,0 +1,30 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+trim_trailing_white_space_on_save = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Tab indentation (no size specified)
+[src/apps/**/*.js]
+indent_style = tab
+indent_size = 4
+
+# Indentation override for all JS under lib directory
+[{src/systems/libs/**/*.js,src/systems/utilities/**/*.js}]
+indent_style = tab
+indent_size = 2
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml,Gruntfile.js,server.js,config/.csslintrc,config/.htmlhint-n-rc,config/.htmlhint-t-rc,config/.jscsrc,config/.jshintrc,config/build.js,config/servefiles.json}]
+indent_style = tab
+indent_size = 4
