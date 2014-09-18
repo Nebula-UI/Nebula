@@ -1,7 +1,7 @@
 define(function(require) {
 	'use strict';
 
-	var AboutTemplate = require('text!templates/aboutTpl.html'),
+	var AboutTemplate = require('template!templates/aboutTpl'),
 		BaseView = require('views/_baseView');
 
 	return BaseView.extend({

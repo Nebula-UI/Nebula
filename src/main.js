@@ -20,8 +20,9 @@ requirejs.config({
         'i18n': '../systems/libs/i18n.min',
         'json3': '../systems/libs/json3.min',
         'text': '../systems/libs/text.min',
-        'handlebars': '../system/libs/handlebars.min',
-        'templates': '../../templates'        
+        'handlebars': '../systems/libs/handlebars.min',
+        'template': '../systems/utilities/hd-template-mapper',
+        'templates': '../../templates'
     },
 
     /***
@@ -47,6 +48,9 @@ requirejs.config({
         },
         text: {
             exports: 'text'
+        },
+        handlebars: {
+            exports: 'Handlebars'
         }
     }
 });
@@ -60,7 +64,7 @@ require(['app', 'router/router', 'core', 'i18n'], function(AppView, Router, Core
         lng: 'en',
         debug: true,
         fallbackLng: 'en',
-        load:'unspecific',
+        load: 'unspecific',
         resGetPath: "locales/__lng__/__ns__.json",
         ns: {
             namespaces: ['translation'],
