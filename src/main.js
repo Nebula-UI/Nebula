@@ -19,7 +19,8 @@ requirejs.config({
         'backbone': '../systems/libs/backbone.min',
         'i18n': '../systems/libs/i18n.min',
         'json3': '../systems/libs/json3.min',
-        'text': '../systems/libs/text',
+        'text': '../systems/libs/text.min',
+        'handlebars': '../system/libs/handlebars.min',
         'templates': '../../templates'        
     },
 
