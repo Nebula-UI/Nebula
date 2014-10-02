@@ -54,7 +54,7 @@ requirejs.config({
             exports: 'Handlebars'
         },
         swag: {
-            deps: ['handlebars']
+            deps: ['handlebars'],
             exports: 'Swag'
         }
     }
