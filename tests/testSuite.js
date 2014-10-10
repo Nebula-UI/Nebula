@@ -1,5 +1,7 @@
 function onReady() {
-	QUnit.config.autoStart = false;
-	var testModules = []
+	QUnit.config.autostart = false;
+	var testModules = [
+		'apps/views/_baseView.js'
+	];
 	require(testModules, QUnit.start);
 }
