@@ -1,8 +1,7 @@
-# Nebula [![GitHub version](https://badge.fury.io/gh/hegdeashwin%2FNebula.svg)](http://badge.fury.io/gh/hegdeashwin%2FNebula)
+# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.3-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
 
 
-[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula)  [![Code Climate](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/badges/a73df6c9e5472e6b867d/gpa.png)](http://codeclimate.com/repos/52fa1e95e30ba07f52002102/feed)   [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hegdeashwin/nebula/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
 
 
 Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
@@ -117,13 +116,11 @@ Libraries/frameworks used
 
 Special editions
 ================
-<ul>
-	<li>
-		<a href="//github.com/hegdeashwin/Nebula-Marionette-Edition" target="_blank">Nebula - Marionette edition: </a>An open source walking application skeleton based on Nebula architecture for a typical Backbone-Marionette web apps. You can use it to quickly bootstrap your Backbone-Marionette web application projects.
+<a href="http://backbonejs.org/" target="_blank">Boneloop</a> is an open source enterprise edition of <a href="https://github.com/hegdeashwin/Nebula" target="_blank">Nebula</a> based upon <a href="http://backbonejs.org/" target="_blank">Backbone</a> + <a href="http://marionettejs.com/" target="_blank">Marionette</a> - A scalable and composite application architecture for Backbone.js.
 
-		For more information visit <a href="//marionettejs.com/" target="_blank">http://marionettejs.com/</a>
-	</li>
-</ul>
+Boneloop provides a client-[server]-side stack for building enterprise grade HTML5/Marionette applications. It could be used with any server side like Node.js, Ruby, PHP, JEE, Spring etc.
+
+By default it's server side environment comes with Node.js - <a href="http://loopback.io/" target="_blank">Loopback (StrongLoop)</a> stack.
 
 Author & Contributors
 =====================
