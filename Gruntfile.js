@@ -185,4 +185,9 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('autofix', ['autoprefixer']);
 
+    /**
+     * Define sub-tasks : Alias for `tests`
+     */
+    grunt.registerTask('tests', ['qunit']);
+
 };

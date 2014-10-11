@@ -95,6 +95,7 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 | grunt-contrib-less	 | grunt less:readyMade     | Compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
 | grunt-contrib-less     | grunt less:customMade    | Compile all the less files. The files which created by users as their custom stylesheets.
 | grunt-contrib-watch	 | grunt watch 				| Keep watch on less folders & files. Any changes in less file will automatically compile all the less files. |
+| grunt-contrib-qunit	 | grunt qunit 				| Perform unit testing. |
 
 **Combine tasks**
 
@@ -103,6 +104,7 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 | grunt default               | Executing this command will perform the task to detect errors and issues for HTML, CSS, JavaScript and less compilation to CSS. It includes jshint, jscs, htmlhint, csslint, less:readyMade, less:customMade. |
 | grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
+| grunt tests		          | Executing this command will perform unit testing. |
 
 Libraries/frameworks used
 =========================
