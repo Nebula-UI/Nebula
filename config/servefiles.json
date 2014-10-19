@@ -14,6 +14,11 @@
 			"src/apps/**/*.js"
 		]
 	},
+	"jsonlint": [
+		"package.json",
+		"config/.jscsrc",
+		"config/.jshintrc"
+	],
 	"csslint": {
 		"files": [
 			"src/stylesheets/css/**/*.css"

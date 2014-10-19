@@ -45,7 +45,8 @@
     "grunt-contrib-htmlmin": "~0.3.0",
     "grunt-autoprefixer": "~1.0.0",
     "grunt-contrib-qunit": "~0.5.2",
-    "time-grunt": "~1.0.0"
+    "time-grunt": "~1.0.0",
+    "grunt-jsonlint": "~1.0.4"
   },
   "keywords": [
     "backbone",

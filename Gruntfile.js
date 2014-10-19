@@ -32,6 +32,11 @@ module.exports = function(grunt) {
             },
             src: '<%= configuredFiles.jscs.files %>',
         },
+        jsonlint: {
+            files: {
+                src: '<%= configuredFiles.jsonlint %>'
+            }
+        },
         csslint: {
             strict: {
                 options: {
@@ -145,6 +150,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-qunit');
+    grunt.loadNpmTasks('grunt-jsonlint');
 
     /**
      * Define tasks : Tasks for development eco - system.
@@ -154,6 +160,7 @@ module.exports = function(grunt) {
         'csslint',
         'jshint',
         'jscs',
+        'jsonlint',
         'less:readyMade',
         'less:customMade',
         'autofix'
@@ -167,6 +174,7 @@ module.exports = function(grunt) {
         'htmlhint',
         'csslint',
         'jshint',
+        'jsonlint',
         'compileless',
         'autofix',
         'clean',
