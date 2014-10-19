@@ -5,8 +5,9 @@
 				<div class="inner">
 					<h1 class="masthead-brand">Nebula <sup><small>{{globals.application.version}}</small></sup></h1>
 					<ul class="nav masthead-nav">
-						<li><a href="#">Home</a></li>
-						<li class="active"><a href="#about">About</a></li>
+						{{#each serializeData.menu}}
+							<li><a href="{{hash}}">{{text}}</a></li>
+						{{/each}}
 					</ul>
 				</div>
 			</div>

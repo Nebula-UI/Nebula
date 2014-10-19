@@ -15,8 +15,24 @@ define(function(require) {
 			console.log("LOG: Initialize Homeview");
 
 			this.render();
-		}
+		},
 		*/
+
+		hasSerializeData: function() {
+			var data = {
+				"menu": [{
+					"hash": "#",
+					"text": "Home"
+				}, {
+					"hash": "#about",
+					"text": "About"
+				}]
+			};
+
+			console.log("LOG: Serialize Data from Home View: %j", data);
+
+			return data;
+		},
 
 		// The `onRender` method gets called after render method.  This method is optional.
 		onRender: function() {
