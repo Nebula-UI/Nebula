@@ -1,4 +1,5 @@
 {
+	"usebanner": ["prod/apps/**/*.js"],
 	"jshint": {
 		"files": [
 			"src/apps/**/*.js"
@@ -16,6 +17,7 @@
 	},
 	"jsonlint": [
 		"package.json",
+		"config/banner.json",
 		"config/.jscsrc",
 		"config/.jshintrc"
 	],

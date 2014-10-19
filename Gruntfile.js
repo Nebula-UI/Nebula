@@ -10,13 +10,29 @@ module.exports = function(grunt) {
      * Setup configuration
      */
     grunt.initConfig({
+        pkg: grunt.file.readJSON('config/banner.json'),
+        buildTags: "/* Project Name : <%= pkg.application.name %> Release version : <%= pkg.application.version %> */",
+
         configuredFiles: grunt.file.readJSON('config/servefiles.json'),
+
         clean: {
             build: ['prod']
         },
         shell: {
             uglify: {
                 command: 'node tools/r.js -o config/build.js'
+            }
+        },
+        usebanner: {
+            buildTags: {
+                options: {
+                    position: 'top',
+                    banner: '<%= buildTags %>',
+                    linebreak: true
+                },
+                files: {
+                    src: '<%= configuredFiles.usebanner %>'
+                }
             }
         },
         jshint: {
@@ -151,6 +167,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-banner');
 
     /**
      * Define tasks : Tasks for development eco - system.
@@ -180,7 +197,8 @@ module.exports = function(grunt) {
         'clean',
         'shell',
         'strip',
-        'htmlmin'
+        'htmlmin',
+        'usebanner'
     ]);
 
     /**
