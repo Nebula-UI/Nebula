@@ -65,6 +65,9 @@
   "scripts": {
     "test": "grunt --verbose"
   },
+  "main": {
+    "start": "node server.js"
+  },
   "licenses": [{
     "type": "MIT",
     "url": "http://raw.github.com/hegdeashwin/Nebula/master/LICENSE"
