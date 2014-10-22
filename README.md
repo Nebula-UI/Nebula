@@ -107,16 +107,6 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
 
-Libraries/frameworks used
-=========================
-| Name                        											 | Version        |
-| ---------------------------------------------------------------------- |:--------------:|
-| <a href="//jquery.com/" target="_blank">jQuery</a>        			 | 2.0.3 		  |
-| <a href="//backbonejs.org/" target="_blank">Underscore</a>          	 | 1.5.2     	  |
-| <a href="//underscorejs.org/" target="_blank">Backbone</a>          	 | 1.1 		      |
-| <a href="//requirejs.org/" target="_blank">Require (AMD)</a>   		 | 1.2.10 		  |
-| <a href="//getbootstrap.com/" target="_blank">Twitter Bootstrap</a>  	 | 3.1.0  		  |
-
 Special editions
 ================
 <a href="http://backbonejs.org/" target="_blank">Boneloop</a> is an open source enterprise edition of <a href="https://github.com/hegdeashwin/Nebula" target="_blank">Nebula</a> based upon <a href="http://backbonejs.org/" target="_blank">Backbone</a> + <a href="http://marionettejs.com/" target="_blank">Marionette</a> - A scalable and composite application architecture for Backbone.js.
