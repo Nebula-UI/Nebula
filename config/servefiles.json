@@ -19,7 +19,11 @@
 		"package.json",
 		"config/banner.json",
 		"config/.jscsrc",
-		"config/.jshintrc"
+		"config/.jshintrc",
+		"config/.jshintrc",
+		"config/.csslintrc",
+		"config/.htmlhint-n-rc",
+		"config/.htmlhint-t-rc"
 	],
 	"csslint": {
 		"files": [

@@ -92,6 +92,7 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 | grunt-contrib-csslint	 | grunt csslint            | Detect errors and issues for CSS stylesheets. |
 | grunt-contrib-jshint	 | grunt jshint             | Detect errors and issues for JavaScript. |
 | grunt-jscs-checker	 | grunt jscs               | Detect unwanted spacing etc. for JavaScript. |
+| grunt-jsonlint		 | grunt jsonlint           | Detect errors and issues for JSON/Configuration files. |
 | grunt-contrib-less	 | grunt less:readyMade     | Compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
 | grunt-contrib-less     | grunt less:customMade    | Compile all the less files. The files which created by users as their custom stylesheets.
 | grunt-contrib-watch	 | grunt watch 				| Keep watch on less folders & files. Any changes in less file will automatically compile all the less files. |
