@@ -202,6 +202,11 @@ module.exports = function(grunt) {
     ]);
 
     /**
+     * Define tasks : Tasks for less:compilation watch, Also alias for `watch`
+     */
+    grunt.registerTask('watchless', ['watch:less']);
+
+    /**
      * Define sub-tasks : Tasks for Less compilation.
      */
     grunt.registerTask('compileless', ['less:readyMade', 'less:customMade']);
