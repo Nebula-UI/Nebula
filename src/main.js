@@ -14,11 +14,11 @@ requirejs.config({
      */
     paths: {
         /*** List of frameworks/libraries to be included in the codebase. ***/
-        'jquery': '../systems/libs/jquery.min',
-        'underscore': '../systems/libs/underscore.min',
-        'backbone': '../systems/libs/backbone.min',
-        'text': '../systems/libs/text.min',
-        'handlebars': '../systems/libs/handlebars.min',
+        'jquery': '../bower_components/jquery/jquery.min',
+        'underscore': '../bower_components/underscore/underscore-min',
+        'backbone': '../bower_components/backbone/backbone',
+        'text': '../bower_components/requirejs-text/text',
+        'handlebars': '../bower_components/handlebars/handlebars.min',
         'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
