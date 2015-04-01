@@ -17,11 +17,8 @@ requirejs.config({
         'jquery': '../systems/libs/jquery.min',
         'underscore': '../systems/libs/underscore.min',
         'backbone': '../systems/libs/backbone.min',
-        'i18n': '../systems/libs/i18n.min',
-        'json3': '../systems/libs/json3.min',
         'text': '../systems/libs/text.min',
         'handlebars': '../systems/libs/handlebars.min',
-        'swag': '../systems/libs/swag.min',
         'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
@@ -40,44 +37,19 @@ requirejs.config({
             deps: ['jquery', 'underscore'],
             exports: 'Backbone'
         },
-        i18n: {
-            deps: ['jquery'],
-            exports: 'i18n'
-        },
-        json3: {
-            exports: 'json3'
-        },
         text: {
             exports: 'text'
         },
         handlebars: {
             exports: 'Handlebars'
-        },
-        swag: {
-            deps: ['handlebars'],
-            exports: 'Swag'
         }
     }
 });
 
 /*** Load app.js to initialize your application module. ***/
-require(['app', 'router/router', 'core', 'i18n'], function(AppView, Router, Core, i18n) {
+require(['app', 'router/router', 'core'], function(AppView, Router, Core) {
     var appView = Core.create({}, 'AppView', AppView);
     appView.render();
-
-    i18n.init({
-        lng: 'en',
-        debug: true,
-        fallbackLng: 'en',
-        load: 'unspecific',
-        resGetPath: "locales/__lng__/__ns__.json",
-        ns: {
-            namespaces: ['translation'],
-            defaultNs: 'translation'
-        }
-    });
-
-
 
     /***
      * The router now has a copy of all main appview
