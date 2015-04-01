@@ -1,4 +1,4 @@
-# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.4-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
+# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.5-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
 
 
 [![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
