@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         shell: {
             uglify: {
-                command: 'node tools/r.js -o config/build.js'
+                command: 'node config/r.js -o config/build.js'
             }
         },
         usebanner: {
