@@ -18,11 +18,11 @@
 	"jsonlint": [
 		"package.json",
 		"config/banner.json",
-		"config/.jscsrc",
-		"config/.jshintrc",
-		"config/.csslintrc",
-		"config/.htmlhint-n-rc",
-		"config/.htmlhint-t-rc"
+		"config/lints/.jscsrc",
+		"config/lints/.jshintrc",
+		"config/lints/.csslintrc",
+		"config/lints/.htmlhint-n-rc",
+		"config/lints/.htmlhint-t-rc"
 	],
 	"csslint": {
 		"files": [
