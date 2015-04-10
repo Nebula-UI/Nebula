@@ -37,14 +37,14 @@ module.exports = function(grunt) {
         },
         jshint: {
             options: {
-                jshintrc: 'config/.jshintrc',
+                jshintrc: 'config/lints/.jshintrc',
                 ignores: '<%= configuredFiles.jshint.ignore %>'
             },
             all: '<%= configuredFiles.jshint.files %>'
         },
         jscs: {
             options: {
-                config: 'config/.jscsrc'
+                config: 'config/lints/.jscsrc'
             },
             src: '<%= configuredFiles.jscs.files %>',
         },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         csslint: {
             strict: {
                 options: {
-                    csslintrc: 'config/.csslintrc',
+                    csslintrc: 'config/lints/.csslintrc',
                     ignores: '<%= configuredFiles.csslint.ignore %>'
                 },
                 src: '<%= configuredFiles.csslint.files %>'
@@ -65,14 +65,14 @@ module.exports = function(grunt) {
         htmlhint: {
             Root_HTML_Files: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-n-rc',
+                    htmlhintrc: 'config/lints/.htmlhint-n-rc',
                     ignores: '<%= configuredFiles.htmlhint.Root_HTML_Files.ignore %>'
                 },
                 src: '<%= configuredFiles.htmlhint.Root_HTML_Files.files %>'
             },
             Templates: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-t-rc',
+                    htmlhintrc: 'config/lints/.htmlhint-t-rc',
                     ignores: '<%= configuredFiles.htmlhint.Templates.ignore %>'
                 },
                 src: '<%= configuredFiles.htmlhint.Templates.files %>'
