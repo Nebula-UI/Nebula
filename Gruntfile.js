@@ -174,13 +174,12 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('default', [
         'htmlhint',
-        'csslint',
-        'jshint',
-        'jscs',
         'jsonlint',
-        'less:readyMade',
-        'less:customMade',
-        'autofix'
+        'jscs',
+        'jshint',
+        'compileLessDev',
+        'autofix',
+        'csslint'
     ]);
     grunt.registerTask('dev', ['default']); // Alias for `default`.
 
@@ -189,14 +188,15 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('build', [
         'htmlhint',
-        'csslint',
-        'jshint',
         'jsonlint',
-        'compileless',
+        'jscs',
+        'jshint',
+        'compileLessProd',
         'autofix',
+        'csslint',
         'clean',
-        'shell',
         'strip',
+        'shell',
         'htmlmin',
         'usebanner'
     ]);
@@ -207,9 +207,14 @@ module.exports = function(grunt) {
     grunt.registerTask('watchless', ['watch:less']);
 
     /**
-     * Define sub-tasks : Tasks for Less compilation.
+     * Define sub-tasks : Tasks for Less compilation for development.
      */
-    grunt.registerTask('compileless', ['less:readyMade', 'less:customMade']);
+    grunt.registerTask('compileLessDev', ['less:readyMade', 'less:customMade']);
+
+    /**
+     * Define sub-tasks : Tasks for Less compilation for production.
+     */
+    grunt.registerTask('compileLessProd', ['less:readyMade', 'less:prod']);
 
     /**
      * Define sub-tasks : Alias for `autofix`
