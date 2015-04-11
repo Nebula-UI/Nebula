@@ -1,0 +1,8 @@
+<div class="inner">
+	<h1 class="masthead-brand">Nebula <sup><small>{{globals.application.version}}</small></sup></h1>
+	<ul class="nav masthead-nav">
+		{{#each serializeData.menu}}
+			<li><a href="{{hash}}">{{text}}</a></li>
+		{{/each}}
+	</ul>
+</div>

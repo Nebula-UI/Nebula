@@ -70,7 +70,9 @@
 	"htmlmin": {
 		"files": {
 			"prod/index.html": "prod/index.html",
-			"prod/templates/homeTpl.html": "prod/templates/homeTpl.html",
+			"prod/templates/headerTpl.html": "prod/templates/headerTpl.html",
+			"prod/templates/footerTpl.html": "prod/templates/footerTpl.html",
+			"prod/templates/masterTpl.html": "prod/templates/masterTpl.html",
 			"prod/templates/aboutTpl.html": "prod/templates/aboutTpl.html"
 		}
 	}
