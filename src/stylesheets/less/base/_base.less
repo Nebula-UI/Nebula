@@ -1,0 +1,21 @@
+/**
+ * Base rules:
+ *
+ * A Base rule is applied to an element using an element selector, 
+ * a descendent selector, or a child selector, along with any pseudo-classes. 
+ * It doesn’t include any class or ID selectors. 
+ * It is defining the default styling for how that element should look in all occurrences on the page.
+ */
+
+html, body {
+    height: 100%;
+    background-color: @white;
+}
+
+body {
+    font-family: "segoeui", segoeui, serif;
+    color: @gray-dark;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}

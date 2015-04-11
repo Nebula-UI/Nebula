@@ -56,9 +56,7 @@
 		},
 		"customMade": {
 			"files": {
-				"src/stylesheets/css/common/common.css": [
-					"src/stylesheets/less/common/imports.less"
-				]
+				"src/stylesheets/css/consolidate.css": "src/stylesheets/less/_consolidate.less"
 			}
 		}
 	},
