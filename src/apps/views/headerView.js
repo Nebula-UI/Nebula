@@ -1,14 +1,14 @@
 define(function(require) {
 	'use strict';
 
-	var HomeTemplate = require('template!templates/homeTpl'),
+	var HeaderTemplate = require('template!templates/headerTpl'),
 		BaseView = require('views/_baseView');
 
 	return BaseView.extend({
 
-		el: 'body',
+		el: 'header',
 
-		template: HomeTemplate,
+		template: HeaderTemplate,
 
 		/* // Uncomment if you want to override baseview initialize methods.
 		initialize: function() {

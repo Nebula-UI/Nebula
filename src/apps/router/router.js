@@ -27,8 +27,8 @@ define(function(require) {
         var router = new AppRouter(options);
 
         router.on('route:home', function() {
-            require(['views/homeView'], function(HomePage) {
-                Core.create(appView, 'HomePage', HomePage);
+            require(['views/_masterView'], function(Page) {
+                Core.create(appView, 'Page', Page);
             });
         });
 
