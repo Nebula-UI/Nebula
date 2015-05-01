@@ -50,8 +50,8 @@
 	"less": {
 		"readyMade": {
 			"files": {
-				"src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
-				"src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
+				"src/bower_components/bootstrap/dist/css/bootstrap.min.css": "src/bower_components/bootstrap/less/bootstrap.less",
+				"src/bower_components/bootstrap/dist/css/bootstrap-theme.min.css": "src/bower_components/bootstrap/less/theme.less"
 			}
 		},
 		"customMade": {
