@@ -19,6 +19,7 @@ requirejs.config({
         'backbone': '../bower_components/backbone/backbone',
         'text': '../bower_components/requirejs-text/text',
         'handlebars': '../bower_components/handlebars/handlebars.min',
+        'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min',
         'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
@@ -42,6 +43,10 @@ requirejs.config({
         },
         handlebars: {
             exports: 'Handlebars'
+        },
+        bootstrap: {
+            deps: ['jquery'],
+            exports: 'bootstrap'
         }
     }
 });
