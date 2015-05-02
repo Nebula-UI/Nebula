@@ -10,21 +10,22 @@ var express = require('express'),
 	bodyParser = require('body-parser');
 
 var app = express(),
-	config = require("./tools/config");
+	config = require("./config/server.env");
 
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV || 'development',
+	staticEnvString = 'development';
 
 /**
  * Application configurations for development environment.
  * NODE_ENV=development node server.js
  ***/
-if ('development' === env) {
+if (staticEnvString.toLowerCase() === env.toLowerCase()) {
 	app.set('port', process.env.PORT || config.server.dev.port);
 	app.use(favicon());
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({
-		extended: false
+		extended: true
 	}));
 	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.dev.codebase)));
@@ -34,13 +35,14 @@ if ('development' === env) {
  * Application configurations for production environment.
  * NODE_ENV=production node server.js
  ***/
-if ('production' === env) {
+staticEnvString = "production";
+if (staticEnvString.toLowerCase() === env.toLowerCase()) {
 	app.set('port', process.env.PORT || config.server.prod.port);
 	app.use(favicon());
 	app.use(logger('prod'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({
-		extended: false
+		extended: true
 	}));
 	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.prod.codebase)));

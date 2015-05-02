@@ -6,7 +6,7 @@ define(function(require) {
 
 	return BaseView.extend({
 
-		el: 'body',
+		el: '#innerContainer',
 
 		template: AboutTemplate,
 
@@ -17,22 +17,6 @@ define(function(require) {
 			this.render();
 		},
 		*/
-
-		hasSerializeData: function() {
-			var data = {
-				"menu": [{
-					"hash": "#",
-					"text": "Home"
-				}, {
-					"hash": "#about",
-					"text": "About"
-				}]
-			};
-
-			console.log("LOG: Serialize Data from About View: %j", data);
-
-			return data;
-		},
 
 		// The `onRender` method gets called after render method. This method is optional.
 		onRender: function() {

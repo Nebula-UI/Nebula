@@ -18,12 +18,11 @@
 	"jsonlint": [
 		"package.json",
 		"config/banner.json",
-		"config/.jscsrc",
-		"config/.jshintrc",
-		"config/.jshintrc",
-		"config/.csslintrc",
-		"config/.htmlhint-n-rc",
-		"config/.htmlhint-t-rc"
+		"config/lints/.jscsrc",
+		"config/lints/.jshintrc",
+		"config/lints/.csslintrc",
+		"config/lints/.htmlhint-n-rc",
+		"config/lints/.htmlhint-t-rc"
 	],
 	"csslint": {
 		"files": [
@@ -51,15 +50,13 @@
 	"less": {
 		"readyMade": {
 			"files": {
-				"src/systems/frameworks/bootstrap/css/bootstrap.min.css": "src/systems/frameworks/bootstrap/less/bootstrap.less",
-				"src/systems/frameworks/bootstrap/css/bootstrap-theme.min.css": "src/systems/frameworks/bootstrap/less/theme.less"
+				"src/bower_components/bootstrap/dist/css/bootstrap.min.css": "src/bower_components/bootstrap/less/bootstrap.less",
+				"src/bower_components/bootstrap/dist/css/bootstrap-theme.min.css": "src/bower_components/bootstrap/less/theme.less"
 			}
 		},
 		"customMade": {
 			"files": {
-				"src/stylesheets/css/common/common.css": [
-					"src/stylesheets/less/common/imports.less"
-				]
+				"src/stylesheets/css/consolidate.css": "src/stylesheets/less/_consolidate.less"
 			}
 		}
 	},
@@ -73,7 +70,9 @@
 	"htmlmin": {
 		"files": {
 			"prod/index.html": "prod/index.html",
-			"prod/templates/homeTpl.html": "prod/templates/homeTpl.html",
+			"prod/templates/headerTpl.html": "prod/templates/headerTpl.html",
+			"prod/templates/footerTpl.html": "prod/templates/footerTpl.html",
+			"prod/templates/masterTpl.html": "prod/templates/masterTpl.html",
 			"prod/templates/aboutTpl.html": "prod/templates/aboutTpl.html"
 		}
 	}

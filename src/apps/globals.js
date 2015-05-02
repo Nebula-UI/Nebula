@@ -3,7 +3,7 @@ define(function() {
 
 	return {
 		"application": {
-			"version": "v0.0.4"
+			"version": "v0.0.7"
 		}
 	};
 

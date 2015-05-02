@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },
         shell: {
             uglify: {
-                command: 'node tools/r.js -o config/build.js'
+                command: 'node src/bower_components/rjs/dist/r.js -o config/build.js'
             }
         },
         usebanner: {
@@ -37,14 +37,14 @@ module.exports = function(grunt) {
         },
         jshint: {
             options: {
-                jshintrc: 'config/.jshintrc',
+                jshintrc: 'config/lints/.jshintrc',
                 ignores: '<%= configuredFiles.jshint.ignore %>'
             },
             all: '<%= configuredFiles.jshint.files %>'
         },
         jscs: {
             options: {
-                config: 'config/.jscsrc'
+                config: 'config/lints/.jscsrc'
             },
             src: '<%= configuredFiles.jscs.files %>',
         },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         csslint: {
             strict: {
                 options: {
-                    csslintrc: 'config/.csslintrc',
+                    csslintrc: 'config/lints/.csslintrc',
                     ignores: '<%= configuredFiles.csslint.ignore %>'
                 },
                 src: '<%= configuredFiles.csslint.files %>'
@@ -65,14 +65,14 @@ module.exports = function(grunt) {
         htmlhint: {
             Root_HTML_Files: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-n-rc',
+                    htmlhintrc: 'config/lints/.htmlhint-n-rc',
                     ignores: '<%= configuredFiles.htmlhint.Root_HTML_Files.ignore %>'
                 },
                 src: '<%= configuredFiles.htmlhint.Root_HTML_Files.files %>'
             },
             Templates: {
                 options: {
-                    htmlhintrc: 'config/.htmlhint-t-rc',
+                    htmlhintrc: 'config/lints/.htmlhint-t-rc',
                     ignores: '<%= configuredFiles.htmlhint.Templates.ignore %>'
                 },
                 src: '<%= configuredFiles.htmlhint.Templates.files %>'
@@ -174,13 +174,12 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('default', [
         'htmlhint',
-        'csslint',
-        'jshint',
-        'jscs',
         'jsonlint',
-        'less:readyMade',
-        'less:customMade',
-        'autofix'
+        'jscs',
+        'jshint',
+        'compileLessDev',
+        'autofix',
+        'csslint'
     ]);
     grunt.registerTask('dev', ['default']); // Alias for `default`.
 
@@ -189,22 +188,33 @@ module.exports = function(grunt) {
      */
     grunt.registerTask('build', [
         'htmlhint',
-        'csslint',
-        'jshint',
         'jsonlint',
-        'compileless',
+        'jscs',
+        'jshint',
+        'compileLessProd',
         'autofix',
+        'csslint',
         'clean',
-        'shell',
         'strip',
+        'shell',
         'htmlmin',
         'usebanner'
     ]);
 
     /**
-     * Define sub-tasks : Tasks for Less compilation.
+     * Define tasks : Tasks for less:compilation watch, Also alias for `watch`
      */
-    grunt.registerTask('compileless', ['less:readyMade', 'less:customMade']);
+    grunt.registerTask('watchless', ['watch:less']);
+
+    /**
+     * Define sub-tasks : Tasks for Less compilation for development.
+     */
+    grunt.registerTask('compileLessDev', ['less:readyMade', 'less:customMade']);
+
+    /**
+     * Define sub-tasks : Tasks for Less compilation for production.
+     */
+    grunt.registerTask('compileLessProd', ['less:readyMade', 'less:prod']);
 
     /**
      * Define sub-tasks : Alias for `autofix`

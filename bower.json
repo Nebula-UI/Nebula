@@ -1,0 +1,41 @@
+{
+	"name": "Nebula",
+	"version": "0.0.7",
+	"homepage": "https://github.com/hegdeashwin/Nebula",
+	"authors": [
+		"hegdeashwin <ashwin.hegde3@gmail.com>"
+	],
+	"moduleType": [
+		"amd"
+	],
+	"dependencies": {
+		"jquery": "2.0.3",
+		"backbone": "1.1.2",
+		"underscore": "1.8.2",
+		"handlebars": "2.0.0",
+		"requirejs-text": "2.0.10",
+		"requirejs": "https://github.com/jrburke/requirejs.git#2.1.15",
+		"rjs": "https://github.com/jrburke/r.js.git#2.1.17",
+		"bootstrap": "3.1.0",
+		"qunit": "1.11.0"
+	},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"src/bower_components",
+		"test",
+		"tests",
+		"prod"
+	],
+	"keywords": [
+		"backbone",
+		"framework",
+		"web",
+		"rest",
+		"restful",
+		"node",
+		"express",
+		"architecture"
+	],
+	"license": "MIT"
+}

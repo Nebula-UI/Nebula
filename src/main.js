@@ -14,14 +14,12 @@ requirejs.config({
      */
     paths: {
         /*** List of frameworks/libraries to be included in the codebase. ***/
-        'jquery': '../systems/libs/jquery.min',
-        'underscore': '../systems/libs/underscore.min',
-        'backbone': '../systems/libs/backbone.min',
-        'i18n': '../systems/libs/i18n.min',
-        'json3': '../systems/libs/json3.min',
-        'text': '../systems/libs/text.min',
-        'handlebars': '../systems/libs/handlebars.min',
-        'swag': '../systems/libs/swag.min',
+        'jquery': '../bower_components/jquery/jquery.min',
+        'underscore': '../bower_components/underscore/underscore-min',
+        'backbone': '../bower_components/backbone/backbone',
+        'text': '../bower_components/requirejs-text/text',
+        'handlebars': '../bower_components/handlebars/handlebars.min',
+        'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min',
         'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
@@ -40,44 +38,23 @@ requirejs.config({
             deps: ['jquery', 'underscore'],
             exports: 'Backbone'
         },
-        i18n: {
-            deps: ['jquery'],
-            exports: 'i18n'
-        },
-        json3: {
-            exports: 'json3'
-        },
         text: {
             exports: 'text'
         },
         handlebars: {
             exports: 'Handlebars'
         },
-        swag: {
-            deps: ['handlebars'],
-            exports: 'Swag'
+        bootstrap: {
+            deps: ['jquery'],
+            exports: 'bootstrap'
         }
     }
 });
 
 /*** Load app.js to initialize your application module. ***/
-require(['app', 'router/router', 'core', 'i18n'], function(AppView, Router, Core, i18n) {
+require(['app', 'router/router', 'core'], function(AppView, Router, Core) {
     var appView = Core.create({}, 'AppView', AppView);
     appView.render();
-
-    i18n.init({
-        lng: 'en',
-        debug: true,
-        fallbackLng: 'en',
-        load: 'unspecific',
-        resGetPath: "locales/__lng__/__ns__.json",
-        ns: {
-            namespaces: ['translation'],
-            defaultNs: 'translation'
-        }
-    });
-
-
 
     /***
      * The router now has a copy of all main appview
