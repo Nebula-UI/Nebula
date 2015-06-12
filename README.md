@@ -12,10 +12,15 @@ As Nebula is based on Backbone.js. It is assumed user already knows JavaScript, 
 If you are looking for learning Backbone.js, visit <a href="//github.com/hegdeashwin/Backbone" target="_blank">github.com/hegdeashwin/Backbone</a>.
 
 For understanding Nebula skeleton, knowledge of following JavaScript libraries/frameworks are must.
-<ul>
-	<li>Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
-	<li>Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
-</ul>
+* Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p>
+* Grunt.js - a JavaScript task runner. For more information visit <a href="http://gruntjs.com/" target="_blank">gruntjs.com/</a></p>
+* Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a>
+
+## References
+
+Requirejs training kit, Please visit: [https://github.com/hegdeashwin/learning-requirejs] (https://github.com/hegdeashwin/learning-requirejs)
+
+Gruntjs training kit, Please visit: [https://github.com/hegdeashwin/learning-Grunt] (https://github.com/hegdeashwin/learning-Grunt)
 
 ## Installation
 
@@ -127,9 +132,6 @@ Boneloop provides a client-[server]-side stack for building enterprise grade HTM
 By default it's server side environment comes with Node.js - <a href="http://loopback.io/" target="_blank">Loopback (StrongLoop)</a> stack.
 
 ## Author & Contributors
-
-Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
-Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
 We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
 
