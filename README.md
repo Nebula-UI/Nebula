@@ -57,6 +57,10 @@ To start the production server:
 NODE_ENV=production node server.js
 ```
 
+## Nebula Generator
+
+<a href="https://github.com/hegdeashwin/nebula-cli" target="_blank">Nebula-cli</a> is a command line generator for Nebula. This tool will help to generate a walking application skeleton for a typical Backbone web apps.
+
 ## Server layer
 
 The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.0) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
