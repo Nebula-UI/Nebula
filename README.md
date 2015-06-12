@@ -6,19 +6,24 @@
 
 Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
 
-Prerequisites
-=============
+## Prerequisites
+
 As Nebula is based on Backbone.js. It is assumed user already knows JavaScript, jQuery, Backbone.js and Underscore.js.
 If you are looking for learning Backbone.js, visit <a href="//github.com/hegdeashwin/Backbone" target="_blank">github.com/hegdeashwin/Backbone</a>.
 
 For understanding Nebula skeleton, knowledge of following JavaScript libraries/frameworks are must.
-<ul>
-	<li>Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
-	<li>Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
-</ul>
+* Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p>
+* Grunt.js - a JavaScript task runner. For more information visit <a href="http://gruntjs.com/" target="_blank">gruntjs.com/</a></p>
+* Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a>
 
-Installation
-============
+## References
+
+Requirejs training kit, Please visit: [https://github.com/hegdeashwin/learning-requirejs] (https://github.com/hegdeashwin/learning-requirejs)
+
+Gruntjs training kit, Please visit: [https://github.com/hegdeashwin/learning-Grunt] (https://github.com/hegdeashwin/learning-Grunt)
+
+## Installation
+
 Assuming that Git is already installed & running:
 ```
 git clone https://github.com/hegdeashwin/Nebula
@@ -52,12 +57,12 @@ To start the production server:
 NODE_ENV=production node server.js
 ```
 
-Server layer
-============
+## Server layer
+
 The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.0) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
 
-Client layer
-============
+## Client layer
+
 The client side codebase resides in the ```src``` folder. This folder contains following subfolders.
 
 ```
@@ -83,8 +88,8 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 	+--/core
 ```
 
-Task automation
-===============
+## Task automation
+
 Nebula comes with Grunt ecosystem - a JavaScript task runner to perform repetitive tasks like minification, compilation, unit testing, linting etc. Many of the tasks you need are already available as published Grunt plugins.
 
 Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions. 
@@ -114,26 +119,23 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
 
-Special editions
-================
+## Special editions
+
 <a href="http://backbonejs.org/" target="_blank">Boneloop</a> is an open source enterprise edition of <a href="https://github.com/hegdeashwin/Nebula" target="_blank">Nebula</a> based upon <a href="http://backbonejs.org/" target="_blank">Backbone</a> + <a href="http://marionettejs.com/" target="_blank">Marionette</a> - A scalable and composite application architecture for Backbone.js.
 
 Boneloop provides a client-[server]-side stack for building enterprise grade HTML5/Marionette applications. It could be used with any server side like Node.js, Ruby, PHP, JEE, Spring etc.
 
 By default it's server side environment comes with Node.js - <a href="http://loopback.io/" target="_blank">Loopback (StrongLoop)</a> stack.
 
-Author & Contributors
-=====================
-Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
-Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
+## Author & Contributors
 
 We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
 
 To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
 <br>Tracking: <a href="https://github.com/hegdeashwin/Nebula/issues" target="_blank">https://github.com/hegdeashwin/Nebula/issues</a>
 
-License
-=======
+## License
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Ashwin Hegde
