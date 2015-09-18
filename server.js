@@ -4,9 +4,6 @@
 var express = require('express'),
 	http = require('http'),
 	path = require('path'),
-	favicon = require('static-favicon'),
-	logger = require('morgan'),
-	cookieParser = require('cookie-parser'),
 	bodyParser = require('body-parser');
 
 var app = express(),
@@ -21,13 +18,10 @@ var env = process.env.NODE_ENV || 'development',
  ***/
 if (staticEnvString.toLowerCase() === env.toLowerCase()) {
 	app.set('port', process.env.PORT || config.server.dev.port);
-	app.use(favicon());
-	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({
 		extended: true
 	}));
-	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.dev.codebase)));
 }
 
@@ -38,13 +32,10 @@ if (staticEnvString.toLowerCase() === env.toLowerCase()) {
 staticEnvString = "production";
 if (staticEnvString.toLowerCase() === env.toLowerCase()) {
 	app.set('port', process.env.PORT || config.server.prod.port);
-	app.use(favicon());
-	app.use(logger('prod'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({
 		extended: true
 	}));
-	app.use(cookieParser());
 	app.use(express.static(path.join(__dirname, config.server.prod.codebase)));
 }
 
