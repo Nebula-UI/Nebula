@@ -29,14 +29,14 @@ Assuming that Git is already installed & running:
 git clone https://github.com/hegdeashwin/Nebula
 ```
 
-Assuming that Node.js is already installed & running, 
+Assuming that Node.js is already installed & running,
 
 Install dependencies:
 ```
 npm install
 ```
 
-Assuming that Bower is already installed & running, 
+Assuming that Bower is already installed & running,
 
 Install client-side dependencies:
 ```
@@ -96,7 +96,7 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 
 Nebula comes with Grunt ecosystem - a JavaScript task runner to perform repetitive tasks like minification, compilation, unit testing, linting etc. Many of the tasks you need are already available as published Grunt plugins.
 
-Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions. 
+Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions.
 
 Following are the default Grunt plugins that has been integrated with Nebula architecture.
 
@@ -142,4 +142,4 @@ To request a feature or you find any typo errors, enhancements or questions; ple
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Ashwin Hegde
+Copyright (c) 2016 Ashwin Hegde
