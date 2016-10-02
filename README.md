@@ -1,7 +1,7 @@
-# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.7-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
+# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.8-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
 
 
-[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
+[![Build Status](http://travis-ci.org/hegdeashwin/Nebula.png?branch=master)](http://travis-ci.org/hegdeashwin/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.12-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
 
 
 Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
@@ -9,12 +9,12 @@ Nebula is an open source walking application skeleton for a typical Backbone web
 ## Prerequisites
 
 As Nebula is based on Backbone.js. It is assumed user already knows JavaScript, jQuery, Backbone.js and Underscore.js.
-If you are looking for learning Backbone.js, visit <a href="//github.com/hegdeashwin/Backbone" target="_blank">github.com/hegdeashwin/Backbone</a>.
+If you are looking for learning Backbone.js, visit [github.com/hegdeashwin/Backbone](https://github.com/hegdeashwin/Backbone)
 
 For understanding Nebula skeleton, knowledge of following JavaScript libraries/frameworks are must.
-* Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p>
-* Grunt.js - a JavaScript task runner. For more information visit <a href="http://gruntjs.com/" target="_blank">gruntjs.com/</a></p>
-* Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a>
+* Require.js - a JavaScript file and module loader. For more information visit [requirejs.org](https://requirejs.org/)
+* Grunt.js - a JavaScript task runner. For more information visit [gruntjs](http://gruntjs.com/)
+* Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit [Bootstrap](https://getbootstrap.com/)
 
 ## References
 
@@ -26,7 +26,7 @@ Gruntjs training kit, Please visit: [https://github.com/hegdeashwin/learning-Gru
 
 Assuming that Git is already installed & running:
 ```
-git clone https://github.com/hegdeashwin/Nebula
+git clone https://github.com/Nebula-UI/Nebula.git
 ```
 
 Assuming that Node.js is already installed & running,
@@ -59,7 +59,7 @@ NODE_ENV=production node server.js
 
 ## Nebula Generator
 
-<a href="https://github.com/hegdeashwin/nebula-cli" target="_blank">Nebula-cli</a> is a command line generator for Nebula. This tool will help to generate a walking application skeleton for a typical Backbone web apps.
+[Nebula-cli](https://github.com/Nebula-UI/nebula-cli) is a command line generator for Nebula. This tool will help to generate a walking application skeleton for a typical Backbone web apps.
 
 ## Server layer
 
@@ -125,18 +125,19 @@ Following are the default Grunt plugins that has been integrated with Nebula arc
 
 ## Special editions
 
-<a href="http://backbonejs.org/" target="_blank">Boneloop</a> is an open source enterprise edition of <a href="https://github.com/hegdeashwin/Nebula" target="_blank">Nebula</a> based upon <a href="http://backbonejs.org/" target="_blank">Backbone</a> + <a href="http://marionettejs.com/" target="_blank">Marionette</a> - A scalable and composite application architecture for Backbone.js.
+[Boneloop](https://github.com/Nebula-UI/Boneloop)
 
 Boneloop provides a client-[server]-side stack for building enterprise grade HTML5/Marionette applications. It could be used with any server side like Node.js, Ruby, PHP, JEE, Spring etc.
 
-By default it's server side environment comes with Node.js - <a href="http://loopback.io/" target="_blank">Loopback (StrongLoop)</a> stack.
+By default it's server side environment comes with Node.js - [Loopback (StrongLoop)](https://loopback.io/)
 
 ## Author & Contributors
 
-We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Nebula/graphs/contributors" target="_blank">contributors</a> for using and supporting Nebula.
+We really appreciate all kind of contributions. Special thanks to [contributors](https://github.com/Nebula-UI/Nebula/graphs/contributors) for using and supporting Nebula.
 
 To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
-<br>Tracking: <a href="https://github.com/hegdeashwin/Nebula/issues" target="_blank">https://github.com/hegdeashwin/Nebula/issues</a>
+
+Tracking: [https://github.com/Nebula-UI/Nebula/issues](https://github.com/Nebula-UI/Nebula/issues)
 
 ## License
 
