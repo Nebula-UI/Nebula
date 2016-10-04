@@ -29,6 +29,8 @@ Assuming that Git is already installed & running:
 git clone https://github.com/Nebula-UI/Nebula.git
 ```
 
+### On local system:
+
 Assuming that Node.js is already installed & running,
 
 Install dependencies:
@@ -55,6 +57,45 @@ NODE_ENV=development node server.js
 To start the production server:
 ```
 NODE_ENV=production node server.js
+```
+
+Open and run Protocore on browser
+```
+http://localhost:8000
+```
+
+### On Docker
+
+Assuming that Docker is already installed & running.
+
+Open terminal, change directory to the repository where you cloned Protocore and start root session
+```
+sudo -s
+```
+
+Build Protocore docker image
+```
+docker build -t <username>/<repository>
+```
+
+Verify if image got successfully created
+```
+docker images
+```
+
+Run Create image in background
+```
+docker run -d <username>/<repository>
+```
+
+Verify if the images is running in background
+```
+docker ps
+```
+
+Open and run Protocore on browser
+```
+http://localhost:8000
 ```
 
 ## Nebula Generator
