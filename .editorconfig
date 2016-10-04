@@ -15,16 +15,11 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 
 # Tab indentation (no size specified)
-[src/apps/**/*.js]
-indent_style = tab
-indent_size = 4
-
-# Indentation override for all JS under lib directory
-[{src/systems/libs/**/*.js,src/systems/utilities/**/*.js}]
+[{src/**/*.js, *.js, *.json, *.yml, config/*.json, config/*.js}]
 indent_style = tab
 indent_size = 2
 
 # Matches the exact files either package.json or .travis.yml
-[{package.json,.travis.yml,Gruntfile.js,server.js,config/.csslintrc,config/.htmlhint-n-rc,config/.htmlhint-t-rc,config/.jscsrc,config/.jshintrc,config/build.js,config/servefiles.json}]
+[{config/.csslintrc,config/.htmlhint-n-rc,config/.htmlhint-t-rc,config/.jscsrc,config/.jshintrc}]
 indent_style = tab
-indent_size = 4
+indent_size = 2

@@ -15,11 +15,14 @@ RUN apt-get install -y nodejs npm
 RUN mkdir -p /usr/nebula
 WORKDIR /usr/nebula
 
+# Install dependencies at global level
+RUN npm install -g grunt-cli bower
+
 # Install app dependencies
 COPY package.json /usr/nebula
-RUN npm install
-RUN npm install -g grunt-cli
+RUN npm install && bower install
 
+# Run source build
 RUN grunt build
 
 # Bundle app source
