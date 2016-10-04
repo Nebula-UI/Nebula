@@ -60,11 +60,8 @@
     "node": ">=0.12"
   },
   "scripts": {
-    "test": "grunt --verbose",
-    "start": "nodejs server.js"
-  },
-  "main": {
-    "start": "nodejs server.js"
+    "start": "node server.js",
+    "docker": "nodejs server.js"
   },
   "licenses": [{
     "type": "MIT",
