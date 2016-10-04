@@ -1,7 +1,10 @@
 before_script:
-  - npm install -g bower
-  - bower install -f
+  - npm install -g grunt bower
+  - npm install
+  - bower install
 
 language: node_js
 node_js:
-  - "0.10"
+  - "6.0.0"
+  - "4.4.7"
+  - "0.12"

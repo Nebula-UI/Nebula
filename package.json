@@ -1,6 +1,6 @@
 {
-  "name": "Nebula",
-  "version": "0.0.8",
+  "name": "nebula",
+  "version": "0.0.9",
   "author": "Ashwin Hegde",
   "description": "Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.",
   "contributors": [{
@@ -9,62 +9,64 @@
   }],
   "repository": {
     "type": "git",
-    "url": "http://github.com/Nebula-UI/Nebula"
+    "url": "https://github.com/Nebula-UI/Nebula"
   },
   "issues": {
-    "url": "http://github.com/Nebula-UI/Nebula/issues?state=open"
+    "url": "https://github.com/Nebula-UI/Nebula/issues?state=open"
   },
   "milestones": {
-    "url": "http://github.com/Nebula-UI/Nebula/issues/milestones"
+    "url": "https://github.com/Nebula-UI/Nebula/issues/milestones"
   },
   "releases": {
-    "url": "http://github.com/Nebula-UI/Nebula/releases"
+    "url": "https://github.com/Nebula-UI/Nebula/releases"
   },
   "wiki": {
-    "url": "http://github.com/Nebula-UI/Nebula/wiki"
-  },
-  "dependencies": {
-    "express": "~4.13.3",
-    "body-parser": "~1.14.0"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-cli": "~0.1.13",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-jshint": "~0.11.0",
-    "grunt-jscs": "~2.1.0",
-    "grunt-contrib-csslint": "~0.5.0",
-    "grunt-htmlhint": "~0.4.0",
-    "grunt-contrib-less": "~1.0.0",
-    "grunt-contrib-watch": "~0.6.0",
-    "grunt-strip": "~0.2.1",
-    "grunt-shell": "~1.1.1",
-    "grunt-contrib-htmlmin": "~0.4.0",
-    "grunt-autoprefixer": "~3.0.0",
-    "grunt-contrib-qunit": "~0.7.0",
-    "time-grunt": "~1.2.0",
-    "grunt-jsonlint": "~1.0.4",
-    "grunt-banner": "~0.5.0"
-  },
-  "keywords": [
-    "backbone",
-    "framework",
-    "web",
-    "rest",
-    "restful",
-    "node",
-    "express",
-    "architecture"
-  ],
-  "engines": {
-    "node": ">=0.12"
+    "url": "https://github.com/Nebula-UI/Nebula/wiki"
   },
   "scripts": {
-    "start": "node server.js",
-    "docker": "nodejs server.js"
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "docker": "NODE_ENV=production nodejs server.js",
+    "build": "grunt build"
+  },
+  "dependencies": {
+    "express": "~4.14.0",
+    "body-parser": "~1.15.2"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-banner": "~0.6.0",
+    "grunt-cli": "~1.2.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-csslint": "~2.0.0",
+    "grunt-contrib-htmlmin": "~2.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-htmlhint": "~0.9.13",
+    "grunt-jscs": "~3.0.1",
+    "grunt-jsonlint": "~1.1.0",
+    "grunt-plato": "^1.4.0",
+    "grunt-shell": "~2.0.0",
+    "grunt-strip": "~0.2.1",
+    "grunt-autoprefixer": "~3.0.0",
+    "grunt-contrib-qunit": "~0.7.0",
+    "time-grunt": "~1.2.0"
+  },
+  "keywords": [
+    "skeleton",
+    "scaffolding",
+    "boilerplate",
+    "protocore",
+    "backbone-scaffolding",
+    "backbone-skeleton",
+    "backbone-boilerplate"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
   },
   "licenses": [{
     "type": "MIT",
-    "url": "http://raw.github.com/Nebula-UI/Nebula/master/LICENSE"
+    "url": "https://raw.github.com/Nebula-UI/Nebula/master/LICENSE"
   }]
 }

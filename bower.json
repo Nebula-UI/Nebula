@@ -1,7 +1,7 @@
 {
-	"name": "Nebula",
-	"version": "0.0.7",
-	"homepage": "https://github.com/hegdeashwin/Nebula",
+	"name": "nebula",
+	"version": "0.0.9",
+	"homepage": "https://github.com/Nebula-UI/Nebula",
 	"authors": [
 		"hegdeashwin <ashwin.hegde3@gmail.com>"
 	],
@@ -27,14 +27,13 @@
 		"prod"
 	],
 	"keywords": [
-		"backbone",
-		"framework",
-		"web",
-		"rest",
-		"restful",
-		"node",
-		"express",
-		"architecture"
+		"skeleton",
+    "scaffolding",
+    "boilerplate",
+    "protocore",
+    "backbone-scaffolding",
+    "backbone-skeleton",
+    "backbone-boilerplate"
 	],
 	"license": "MIT"
 }
