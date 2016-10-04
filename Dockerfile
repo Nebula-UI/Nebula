@@ -1,18 +1,26 @@
+# Docker version 1.9.1, build a34a1d5
+# Build image using the latest version of Ubuntu from the Docker Hub Ubuntu repository.
 FROM ubuntu:16.04
 
-# make sure apt is up to date
+# Declare the MAINTAINER of the Dockerfile
+MAINTAINER Ashwin Hegde <ashwin.hegde3@gmail.com>
+
+# Make sure apt is up to date
 RUN apt-get update
 
-# install nodejs and npm
+# Install nodejs and npm
 RUN apt-get install -y nodejs npm
 
 # Create app directory
 RUN mkdir -p /usr/nebula
 WORKDIR /usr/nebula
 
-# install app dependencies
+# Install app dependencies
 COPY package.json /usr/nebula
-RUN npm install --production
+RUN npm install
+RUN npm install -g grunt-cli
+
+RUN grunt build
 
 # Bundle app source
 COPY . /usr/nebula
@@ -21,4 +29,5 @@ COPY . /usr/nebula
 # to have it mapped by the docker daemon
 EXPOSE 8000
 
-CMD [ "npm", "start" ]
+# Execute command and start Node.js server
+CMD [ "npm", "run", "docker" ]
