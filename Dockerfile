@@ -20,7 +20,7 @@ RUN npm install -g grunt-cli bower
 
 # Install app dependencies
 COPY package.json /usr/nebula
-RUN npm install && bower install
+RUN npm install && bower install --allow-root
 
 # Run source build
 RUN grunt build
