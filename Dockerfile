@@ -9,24 +9,27 @@ MAINTAINER Ashwin Hegde <ashwin.hegde3@gmail.com>
 RUN apt-get update
 
 # Install nodejs and npm
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs nodejs-legacy npm git
 
 # Create app directory
 RUN mkdir -p /usr/nebula
 WORKDIR /usr/nebula
 
 # Install dependencies at global level
-RUN npm install -g grunt-cli bower
+RUN npm install -g grunt-cli
+RUN npm install -g bower
 
 # Install app dependencies
 COPY package.json /usr/nebula
-RUN npm install && bower install --allow-root
-
-# Run source build
-RUN grunt build
+COPY bower.json /usr/nebula
+RUN npm install
+RUN bower install --allow-root
 
 # Bundle app source
 COPY . /usr/nebula
+
+# Run source build
+RUN grunt build
 
 # Your app binds to port 8000 so you'll use the EXPOSE instruction
 # to have it mapped by the docker daemon

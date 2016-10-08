@@ -1,7 +1,7 @@
-# Nebula [![GitHub version](http://img.shields.io/badge/version-0.0.8-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
+# Nebula [![GitHub version](http://img.shields.io/badge/version-0.1.0-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/releases)
 
 
-[![Build Status](https://travis-ci.org/Nebula-UI/Nebula.svg?branch=master)](https://travis-ci.org/Nebula-UI/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.12-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
+[![Build Status](https://travis-ci.org/Nebula-UI/Nebula.svg?branch=master)](https://travis-ci.org/Nebula-UI/Nebula)   [![Dependency Status](http://gemnasium.com/hegdeashwin/Nebula.png)](http://gemnasium.com/hegdeashwin/Nebula) [![Node.js version](http://img.shields.io/badge/Node.js-%3E%206.0.0-brightgreen.svg)](https://github.com/hegdeashwin/Nebula/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Nebula#license)
 
 
 Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.
@@ -141,28 +141,37 @@ Few task automations has been configured to detect errors and potential problems
 
 Following are the default Grunt plugins that has been integrated with Nebula architecture.
 
-**Individual tasks**
+**Automations tasks & commands**
 
-| Grunt Plugin 			 | Command                  | Task Performed              |
-|:-----------------------|:------------------------|:---------------------------|
-| grunt-htmlhint		 | grunt htmllint           | Detect errors and issues for HTML documents for index.html and templates. |
-| grunt-contrib-csslint	 | grunt csslint            | Detect errors and issues for CSS stylesheets. |
-| grunt-contrib-jshint	 | grunt jshint             | Detect errors and issues for JavaScript. |
-| grunt-jscs-checker	 | grunt jscs               | Detect unwanted spacing etc. for JavaScript. |
-| grunt-jsonlint		 | grunt jsonlint           | Detect errors and issues for JSON/Configuration files. |
-| grunt-contrib-less	 | grunt less:readyMade     | Compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
-| grunt-contrib-less     | grunt less:customMade    | Compile all the less files. The files which created by users as their custom stylesheets.
-| grunt-contrib-watch	 | grunt watch 				| Keep watch on less folders & files. Any changes in less file will automatically compile all the less files. |
-| grunt-contrib-qunit	 | grunt qunit 				| Perform unit testing. |
+| Linting commands |
+|:---|
+|Markdown : ```grunt mdlint``` |
+|HTML/Templates : ```grunt htmlhint```|
+|JavaScript : ```grunt jshint``` AND ```grunt jscs```|
+|JSON : ```grunt jsonlint```|
+|CSS : ```grunt csslint```|
 
-**Combine tasks**
+| Build commands |
+|:---|
+|Production : ```grunt build```|
 
-| Command                     | Task performed              |
-|:--------------------------- |:---------------------------|
-| grunt default               | Executing this command will perform the task to detect errors and issues for HTML, CSS, JavaScript and less compilation to CSS. It includes jshint, jscs, htmlhint, csslint, less:readyMade, less:customMade. |
-| grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
-| grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
-| grunt tests		          | Executing this command will perform unit testing. |
+| Compilation commands |
+|:---|
+|LESS for development : ```grunt compileLessDev```|
+|LESS for production : ```grunt compileLessProd```|
+
+| Watch commands |
+|:---|
+|LESS Compilation for development : ```grunt watchless```|
+
+| Unit test commands |
+|:---|
+|Browser: ```http://localhost:8080/tests/``` install http-server npm|
+|Console: ```grunt qunit```|
+
+|Report generator commands|
+|:---|
+|Plato : ```grunt analysis``` OR ```grunt plato```|
 
 ## Special editions
 

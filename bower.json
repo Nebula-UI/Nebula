@@ -1,6 +1,6 @@
 {
 	"name": "nebula",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"homepage": "https://github.com/Nebula-UI/Nebula",
 	"authors": [
 		"hegdeashwin <ashwin.hegde3@gmail.com>"
@@ -30,7 +30,7 @@
 		"skeleton",
     "scaffolding",
     "boilerplate",
-    "protocore",
+    "nebula",
     "backbone-scaffolding",
     "backbone-skeleton",
     "backbone-boilerplate"
