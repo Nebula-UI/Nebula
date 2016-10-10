@@ -1,6 +1,6 @@
 {
   "name": "nebula",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Ashwin Hegde",
   "description": "Nebula is an open source walking application skeleton for a typical Backbone web apps. You can use it to quickly bootstrap your Backbone web application projects.",
   "contributors": [
